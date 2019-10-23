@@ -36,3 +36,25 @@
     text-decoration: underline;
   }
 }
+
+.breadcrumbs--dark {
+
+  .breadcrumbs {
+    &__item {
+      &:last-child {
+        .breadcrumbs__link {
+          opacity: 1;
+        }
+      }
+    }
+
+    &__link {
+      color: #fff;
+
+       &::after {
+        content: " >";
+      }
+    }
+
+  }
+}

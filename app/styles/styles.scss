@@ -1,8 +1,9 @@
 @import "../assets/fonts/gothampro/gothampro";
-@import "./libs/normalize";
-@import "./libs/swiper";
-@import "./libs/jquery.fancybox";
-@import "./libs/nanoscroller";
+@import "./libs/normalize.scss";
+@import "./libs/bootstrap/scss/bootstrap-grid.css";
+@import "./libs/swiper.scss";
+@import "./libs/jquery.fancybox.scss";
+// @import "./libs/nanoscroller";
 @import "./global/vars";
 @import "./global/functions";
 @import "./global/mixins/mixins";
@@ -10,7 +11,7 @@
 @import "./global/default/default";
 @import "./global/helpers";
 @import "./global/js";
-@import "./blocks/nano";
+// @import "./blocks/nano";
 @import "./blocks/sticky-footer";
 @import "./blocks/header-intro-wrap";
 @import "./blocks/bullet";
@@ -82,3 +83,7 @@
 @import "./blocks/article";
 @import "./blocks/content";
 @import "./blocks/page-content";
+@import "./blocks/gilzy";
+@import "./blocks/product-brand";
+@import "./blocks/product-list";
+@import "./blocks/catalog";

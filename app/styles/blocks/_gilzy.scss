@@ -1,0 +1,125 @@
+.gilzy {
+	padding-top: 25px;
+	padding-bottom: 50px;
+	display: flex;
+	align-items: flex-start;
+	color: #fff;
+
+	&__image-box {
+		position: relative;
+		width: 670px;
+		padding-top: 13px;
+		padding-bottom: 12px;
+		margin-right: 53px;
+
+		&::before {
+			content: '';
+			position: absolute;
+			width: 462px;
+			height: 447px;
+			top: 65px;
+			left: -155px;
+			background-image: url('../../assets/images/product-leaf.png');
+			background-size: 100% 100%;
+		}
+
+		&::after {
+			content: '';
+			position: absolute;
+			width: 88%;
+			right: 18px;
+			top: 0;
+			height: 100%;
+			border: 5px solid #cd8638;
+		}
+	}
+
+	&__image {
+		position: relative;
+		z-index: 1;
+	}
+
+	&__content {
+		width: 420px;
+	}
+
+	&__title {
+		color: #fff;
+		font-weight: 500;
+		font-size: 24px;
+		margin-bottom: 30px;
+		text-transform: uppercase;
+
+		&::after {
+			content: '';
+			display: block;
+			height: 2px;
+			width: 65%;
+			margin-top: 15px;
+			background-color: #cd8638;
+		}
+	}
+
+	&__desc {
+		font-size: 14px;
+		line-height: 18px;
+		margin-bottom: 30px;
+	}
+
+	&__table {
+		font-size: 16px;
+
+		tr {
+			display: flex;
+			margin-bottom: 20px;
+		}
+
+		th {
+			border-bottom: 0;
+			text-transform: uppercase;
+			text-align: left;
+			font-size: 16px;
+			padding: 0;
+		}
+
+		td {
+			border-bottom: 0;
+			padding: 0;
+			text-align: left;
+
+			&:first-child {
+				margin-right: 20px;
+				flex-basis: 300px;
+			}
+
+			&:last-child {
+				flex-basis: 98px;
+			}
+		}
+	}
+
+	&__link {
+		margin-bottom: 50px;
+	}
+}
+
+@media (max-width: 919.98px) {
+	.gilzy {
+		flex-direction: column;
+		align-items: center;
+
+		&__image-box {
+			width: auto;
+			margin-right: 0;
+			margin-bottom: 30px;
+
+			&::before {
+				display: none;
+			}
+		}
+
+		&__content {
+			width: auto;
+		}
+	}
+}

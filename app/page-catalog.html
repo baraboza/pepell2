@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <title>ТД Время</title>
+    <meta name="description" content="Крупнейший отечественный производитель и поставщик табачных изделий">
+    <meta name="keywords" content="Табачные изделия, сигареты">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="address=no">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+    <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#431b11">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="./styles/styles.css">
+  </head>
+   <body style="background-color: #190a06;">
+    <header class="page-header page-header--dark js-header-scroll js-page-header">
+      <div class="page-header__wrap">
+        <ul class="page-header__list">
+          <li class="page-header__item">
+            <button class="button-nav page-header__button-nav js-button-page-nav" aria-label="Открыть меню" type="button">
+              <span class="button-nav__icon">
+                <span class="button-nav__lines">
+                </span>
+              </span>
+            </button>
+          </li>
+          <li class="page-header__item page-header__item--callback">
+            <button class="button-icon js-open-page-callback" type="button">
+              <svg class="button-icon__icon">
+                <use xlink:href="./assets/images/sprites/sprite.svg#tel"></use>
+              </svg>
+            </button>
+          </li>
+        </ul>
+        <a class="logo logo--page page-header__logo" title="Перейти на главную страницу" href="main.html">
+          <img class="logo__image" src="./assets/images/logo-white.svg" alt=" ">
+        </a>
+        <nav class="page-header__panel js-panel-page-nav" aria-label="Основное меню" itemscope itemtype="http://schema.org/SiteNavigationElement">
+          <button class="button-close page-header__panel-close js-panel-page-close" aria-label="Закрыть окно" type="button">
+            <span class="button-close__icon">
+            </span>
+          </button>
+          <div class="page-header__panel-wrap">
+            <ul class="page-nav page-nav--dark page-header__page-nav">
+              <li class="page-nav__item" itemprop="name">
+                <a class="page-nav__link" href="javascript:void(0)" itemprop="url">О компании
+                </a>
+              </li>
+              <li class="page-nav__item active" itemprop="name">
+                <a class="page-nav__link" href="javascript:void(0)" itemprop="url">Продукция
+                </a>
+              </li>
+              <li class="page-nav__item" itemprop="name">
+                <a class="page-nav__link" href="page-delivery.html" itemprop="url">Производство
+                </a>
+              </li>
+              <li class="page-nav__item" itemprop="name">
+                <a class="page-nav__link" href="page-contacts.html" itemprop="url">FAQ
+                </a>
+              </li>
+              <li class="page-nav__item" itemprop="name">
+                <a class="page-nav__link" href="page-contacts.html" itemprop="url">Сертификаты
+                </a>
+              </li>
+              <li class="page-nav__item" itemprop="name">
+                <a class="page-nav__link" href="page-contacts.html" itemprop="url">Статьи
+                </a>
+              </li>
+              <li class="page-nav__item" itemprop="name">
+                <a class="page-nav__link" href="page-contacts.html" itemprop="url">Контакты
+                </a>
+              </li>
+            </ul>
+            <div class="callback page-header__callback page-header__callback--panel">
+              <a class="callback__link" href="tel:+79785001445">+7 (978) <span class="callback__number">500-14-45</span>
+              </a>
+              <button class="callback__button js-callback-button" type="button">Обратный звонок
+              </button>
+            </div>
+          </div>
+        </nav>
+        <nav class="page-header__lang-nav" aria-label="Языковое меню" itemscope itemtype="http://schema.org/SiteNavigationElement">
+          <ul class="lang-nav">
+            <li class="lang-nav__item lang-nav__item--lvl-2" itemprop="name">
+              <a class="lang-nav__link js-lang-nav-link" aria-haspopup="true" href="javascript:void(0)" rel="alternate" hreflang="ru" itemprop="url">Ru
+              </a>
+              <ul class="lang-nav-lvl-2 lang-nav__lvl-2">
+                <li class="lang-nav-lvl-2__item" itemprop="name">
+                  <a class="lang-nav-lvl-2__link" href="javascript:void(0)" rel="alternate" hreflang="en" itemprop="url">En
+                  </a>
+                </li>
+                <li class="lang-nav-lvl-2__item" itemprop="name">
+                  <a class="lang-nav-lvl-2__link" href="javascript:void(0)" rel="alternate" hreflang="fr" itemprop="url">Fr
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <div class="page-header__dialog page-header__dialog--callback js-page-dialog js-page-dialog-callback">
+          <div class="page-header__dialog-wrap">
+            <button class="button-close page-header__dialog-close js-close-page-dialog" aria-label="Закрыть окно" type="button">
+              <span class="button-close__icon">
+              </span>
+            </button>
+            <div class="callback page-header__callback">
+              <a class="callback__link" href="tel:+79785001445">+7 (978) <span class="callback__number">500-14-45</span>
+              </a>
+              <button class="callback__button js-callback-button" type="button">Обратный звонок
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="overlay page-header__overlay js-page-header-overlay">
+        </div>
+      </div>
+    </header>
+    <main class="page-content page-content--product page-content--dark">
+      <div class="page-content__wrap">
+        <div class="catalog">
+          <div class="catalog__col">
+            <a href="#" class="catalog__box">
+              <h2 class="catalog__title">Сигареты</h2>
+              <img src="assets/images/cigarettes.png" alt="" class="catalog__image catalog__image--cigarettes">
+            </a>
+          </div>
+          <div class="catalog__col">
+            <a href="#" class="catalog__box">
+              <h2 class="catalog__title">Сигаретные гильзы</h2>
+              <img src="assets/images/gilzy-catalog.png" alt="" class="catalog__image catalog__image--gilzy">
+            </a>
+          </div>
+        </div>
+      </div>
+    </main>
+   <footer class="footer">
+      <div class="footer__top">
+        <div class="footer__wrap">
+          <div class="footer__about">
+            <div class="footer__about-company">
+              <div class="footer__logo-wrap">
+                <a class="logo logo--secondary footer__logo" title="Перейти на главную страницу" href="main.html">
+                  <img class="logo__image" src="./assets/images/logo-white.svg" alt=" ">
+                </a>
+              </div>
+              <p class="footer__text footer__text--info">Крупнейший отечественный <br>производитель и поставщик <br>табачных изделий
+              </p>
+            </div>
+            <div class="footer__about-contacts">
+              <div class="footer__phone-wrap">
+                <a class="footer__phone" href="tel:+79785001445">+7 (978) 500-14-45
+                </a>
+              </div>
+              <p class="footer__text footer__text--address">Респ. Крым, г. Симферополь, <br>ул. Набережная им. 60-летия <br>СССР, д.34
+              </p>
+            </div>
+          </div>
+          <div class="footer__nav">
+            <div class="footer__nav-item footer__nav-item--dropdown footer__nav-item--company js-footer-nav-dropdown" role="navigation" aria-label="Дополнительное меню" itemscope itemtype="http://schema.org/SiteNavigationElement">
+              <h4 class="footer__title js-footer-nav-dropdown-button">Компания</h4>
+              <ul class="footer__list">
+                <li class="footer__item" itemprop="name">
+                  <a href="javascript:void(0)" itemprop="url">Компания
+                  </a>
+                </li>
+                <li class="footer__item" itemprop="name">
+                  <a href="javascript:void(0)" itemprop="url">Производство
+                  </a>
+                </li>
+                <li class="footer__item" itemprop="name">
+                  <a href="javascript:void(0)" itemprop="url">FAQ
+                  </a>
+                </li>
+                <li class="footer__item" itemprop="name">
+                  <a href="javascript:void(0)" itemprop="url">Сертификаты
+                  </a>
+                </li>
+                <li class="footer__item" itemprop="name">
+                  <a href="javascript:void(0)" itemprop="url">Статьи
+                  </a>
+                </li>
+                <li class="footer__item" itemprop="name">
+                  <a href="javascript:void(0)" itemprop="url">Контакты
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__nav-item footer__nav-item--dropdown footer__nav-item--production js-footer-nav-dropdown" role="navigation" aria-label="Дополнительное меню" itemscope itemtype="http://schema.org/SiteNavigationElement">
+              <h4 class="footer__title js-footer-nav-dropdown-button">Сигареты</h4>
+              <div class="footer__nav-row">
+                <div class="footer__list">
+                  <ul class="footer__inner-list">
+                    <li class="footer__item" itemprop="name">
+                      <a href="javascript:void(0)" itemprop="url">PEPPELL
+                      </a>
+                    </li>
+                    <li class="footer__item" itemprop="name">
+                      <a href="javascript:void(0)" itemprop="url">VIP CLUB
+                      </a>
+                    </li>
+                    <li class="footer__item" itemprop="name">
+                      <a href="javascript:void(0)" itemprop="url">Calambia
+                      </a>
+                    </li>
+                    <li class="footer__item" itemprop="name">
+                      <a href="javascript:void(0)" itemprop="url">Nobel Leader
+                      </a>
+                    </li>
+                    <li class="footer__item" itemprop="name">
+                      <a href="javascript:void(0)" itemprop="url">Strong & Brave
+                      </a>
+                    </li>
+                    <li class="footer__item" itemprop="name">
+                      <a href="javascript:void(0)" itemprop="url">Sai Gon
+                      </a>
+                    </li>
+                    <li class="footer__item" itemprop="name">
+                      <a href="javascript:void(0)" itemprop="url">Blossom & Decay
+                      </a>
+                    </li>
+                    <li class="footer__item" itemprop="name">
+                      <a href="javascript:void(0)" itemprop="url">VXR
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="footer__list">
+                  <ul class="footer__inner-list">
+                    <li class="footer__item" itemprop="name">
+                      <a href="javascript:void(0)" itemprop="url">Europe Classical Quality
+                      </a>
+                    </li>
+                    <li class="footer__item" itemprop="name">
+                      <a href="javascript:void(0)" itemprop="url">Ай-Петри
+                      </a>
+                    </li>
+                    <li class="footer__item" itemprop="name">
+                      <a href="javascript:void(0)" itemprop="url">Dune
+                      </a>
+                    </li>
+                    <li class="footer__item" itemprop="name">
+                      <a href="javascript:void(0)" itemprop="url">Fantom
+                      </a>
+                    </li>
+                    <li class="footer__item" itemprop="name">
+                      <a href="javascript:void(0)" itemprop="url">Біле Сонце
+                      </a>
+                    </li>
+                    <li class="footer__item" itemprop="name">
+                      <a href="javascript:void(0)" itemprop="url">Хортиця
+                      </a>
+                    </li>
+                    <li class="footer__item" itemprop="name">
+                      <a href="javascript:void(0)" itemprop="url">2222
+                      </a>
+                    </li>
+                  </ul>
+                  <h4 class="footer__gilzy"><a href="#">Сигаретные гильзы</a></h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="footer__wrap">
+          <p class="footer__copyright">г. Симферополь &copy;&nbsp;Copyright 2019&nbsp;г.
+          </p>
+          <p class="footer__notify">Минздрав предупреждает курение опасно для вашего здоровья
+          </p>
+          <div class="footer__madein">Сделанo в
+            <a title="Sheer" href="https://sheer82.ru/"><span class="hidden">'Sheer'</span>
+              <svg>
+                <use xlink:href="./assets/images/sprites/sprite.svg#sheer"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="footer__conf">
+            <a class="footer__conf-link" href="javascript:void(0)">Политика конфиденциальности
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <button class="button-up js-page-up" type="button">Наверх
+    </button>
+    <div class="modal js-callback-modal js-modal">
+      <div class="overlay modal__overlay active js-modal-overlay">
+      </div>
+      <div class="modal__dialog">
+        <button class="button-close modal__close js-modal-close" aria-label="Закрыть окно" type="button">
+          <span class="button-close__icon">
+          </span>
+        </button>
+        <div class="modal__dialog-inner">
+          <h3 class="modal__heading">Заказать звонок
+          </h3>
+          <p class="modal__text">Заполните форму и наш специалист перезвонит Вам в ближайшее время
+          </p>
+          <form action="/" method="post" accept-charset="UTF-8">
+            <div class="modal__field-group">
+              <label class="field field--w-icon field--border-bottom modal__field">
+                <span class="hidden">Ваше имя
+                </span>
+                <input class="field__input" tabindex="0" placeholder="Ваше имя" name="user" required type="text" aria-required="true" aria-invalid="false">
+                <svg class="field__icon">
+                  <use xlink:href="./assets/images/sprites/sprite.svg#user"></use>
+                </svg>
+              </label>
+              <label class="field field--w-icon field--border-bottom modal__field">
+                <span class="hidden">Ваш телефон
+                </span>
+                <input class="field__input" tabindex="0" placeholder="+7 (___) ___-__-__" name="tel" required type="tel" aria-required="true" aria-invalid="false">
+                <svg class="field__icon">
+                  <use xlink:href="./assets/images/sprites/sprite.svg#tel"></use>
+                </svg>
+              </label>
+            </div>
+            <div class="modal__submit-wrap">
+              <label class="button button--shadow button--size-md modal__submit">
+                <input class="hidden" type="submit">
+                Отправить
+              </label>
+            </div>
+            <div class="modal__confirm-wrap">
+              <label class="checkbox checkbox--confirm form-feedback__confirm">
+                <input class="hidden checkbox__input" required checked type="checkbox">
+                <span class="checkbox__label">Даю согласие на обработку моих персональных данных
+                </span>
+              </label>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="modal js-callback-modal js-modal">
+      <div class="overlay modal__overlay active js-modal-overlay">
+      </div>
+      <div class="modal__dialog">
+        <button class="button-close modal__close js-modal-close" aria-label="Закрыть окно" type="button">
+          <span class="button-close__icon">
+          </span>
+        </button>
+        <div class="modal__dialog-inner">
+          <h3 class="modal__heading">Ваш заказ: EUROPE classical quality
+          </h3>
+          <form action="/" method="post" accept-charset="UTF-8">
+            <div class="modal__field-group">
+              <label class="field field--w-icon field--border-bottom modal__field">
+                <span class="hidden">Ваше имя
+                </span>
+                <input class="field__input" tabindex="0" placeholder="Ваше имя" name="user" required type="text" aria-required="true" aria-invalid="false">
+                <svg class="field__icon">
+                  <use xlink:href="./assets/images/sprites/sprite.svg#user"></use>
+                </svg>
+              </label>
+              <label class="field field--w-icon field--border-bottom modal__field">
+                <span class="hidden">Ваш телефон
+                </span>
+                <input class="field__input" tabindex="0" placeholder="+7 (___) ___-__-__" name="tel" required type="tel" aria-required="true" aria-invalid="false">
+                <svg class="field__icon">
+                  <use xlink:href="./assets/images/sprites/sprite.svg#tel"></use>
+                </svg>
+              </label>
+            </div>
+            <div class="modal__submit-wrap">
+              <label class="button button--shadow button--size-md modal__submit">
+                <input class="hidden" type="submit">
+                Заказать
+              </label>
+            </div>
+            <div class="modal__confirm-wrap">
+              <label class="checkbox checkbox--confirm form-feedback__confirm">
+                <input class="hidden checkbox__input" required checked type="checkbox">
+                <span class="checkbox__label">Даю согласие на обработку моих персональных данных
+                </span>
+              </label>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="./scripts/libs/jquery.js"></script>
+    <script src="./scripts/libs/imask.js"></script>
+    <script src="./scripts/libs/svg4everybody.js"></script>
+    <script src="./scripts/libs/ofi.js"></script>
+    <script src="./scripts/libs/jquery.fancybox.js"></script>
+    <script src="./scripts/libs/picturefill.js"></script>
+    <script src="./scripts/libs/jquery.nanoscroller.js"></script>
+    <script src="./scripts/libs/swiper.js"></script>
+    <script src="./scripts/scripts.js"></script>
+  </body>
+</html>

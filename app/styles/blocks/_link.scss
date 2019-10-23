@@ -27,4 +27,10 @@
   &--uppercase {
     text-transform: uppercase;
   }
+
+  &--white {
+    color: #fff;
+    display: inline-block;
+    padding-bottom: 3px;
+  }
 }

@@ -1,5 +1,20 @@
 .page-nav {
   @include ul-no;
+
+  &--dark {
+    .page-nav__link {
+      color: #fff;
+
+      @include hover {
+        color: #fff;
+      }
+    }
+    .page-nav__item.active {
+      .page-nav__link {
+        color: #fff;
+      }
+    }
+  }
 }
 
 .page-nav__item {

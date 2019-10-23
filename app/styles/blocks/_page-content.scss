@@ -14,6 +14,12 @@
   &--contacts {
     padding-bottom: 0 !important;
   }
+
+  &--dark {
+    background-image: url('../../assets/images/bg-dark.jpg');
+    background-size: cover;
+    background-position: top center;
+  }
 }
 
 .page-content__wrap {
@@ -112,7 +118,7 @@
     margin-bottom: 0;
   }
 
-  .page-content__center {
+  .page-content__center, .page-content__col {
     width: calc(100% - 330px);
   }
 }
@@ -152,6 +158,11 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+      }
+
+      .page-content__col {
+        display: flex;
+        flex-direction: column;
       }
     }
   }

@@ -12,6 +12,29 @@
     display: block;
     background-color: rgba(color(white), 0.9);
   }
+
+  &--dark, &--dark.active {
+    background-color: #190a06;
+    color: #fff;
+
+    .page-header__callback .callback__link {
+      color: #fff;
+    }
+
+    .page-header__panel {
+      background-color: #190a06;
+    }
+
+    .button-close__icon {
+      &::before, &::after {
+        background-color: #fff;
+      }
+    }
+
+    .lang-nav__item--lvl-2 .lang-nav__link::before {
+      border-top-color: #fff;
+    }
+  }
 }
 
 .page-header__wrap {

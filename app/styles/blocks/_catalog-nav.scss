@@ -1,4 +1,8 @@
 .catalog-nav {
+  position: relative;
+  z-index: 2;
+  max-height: 516px;
+  overflow: auto;
   &.active {
     .catalog-nav__list {
       display: block;
@@ -77,7 +81,7 @@
   position: relative;
   display: block;
   width: 100%;
-  padding: 20px 30px;
+  padding: 10px 30px;
   padding-right: 10px;
   background-color: color(light);
   text-decoration: none;
@@ -100,6 +104,25 @@
     &::before {
       opacity: 1;
     }
+  }
+}
+
+.catalog-nav--dark {
+
+  .catalog-nav {
+    &__link {
+      background-color: rgba(255, 255, 255, 0.15);
+      color: #fff;
+    }
+
+    &__item.active .catalog-nav__link {
+      background-color: #fff;
+      color: #431b11;
+    }
+  }
+
+  .catalog-nav__button::after {
+    border-top-color: #fff;
   }
 }
 
