@@ -1,0 +1,61 @@
+.agency-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.agency-list__item {
+  margin-bottom: 5px;
+  font-size: 16px;
+  font-weight: 500;
+
+
+  &--main {
+    color: color(primary);
+
+    .agency-list__link {
+      text-decoration: underline;
+      text-decoration-color: rgba(color(primary), 0.3);
+    }
+
+    .agency-list__item-lvl-2 {
+      color: color(primary);
+    }
+
+    .agency-list__link-lvl-2 {
+      text-decoration-color: rgba(color(primary), 0.3);
+    }
+  }
+}
+
+.agency-list__link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.agency-list__lvl-2 {
+  list-style-type: disc;
+}
+
+.agency-list__item-lvl-2 {
+  margin-top: 5px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.agency-list__link-lvl-2 {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: rgba(color(black), 0.3);
+}
+
+@include respond-to(large) {
+  .agency-list__item {
+    margin-bottom: 10px;
+  }
+
+  .agency-list__item-lvl-2 {
+    margin-top: 12px;
+  }
+
+}

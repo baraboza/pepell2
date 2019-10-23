@@ -1,0 +1,89 @@
+.checkbox {
+  display: inline-block;
+  cursor: pointer;
+
+  &--confirm {
+    .checkbox__label {
+      max-width: 250px;
+      color: rgba(#999, 0.7);
+      font-size: 12px;
+      line-height: 16px;
+
+      &::before {
+        top: calc(50% - 8px);
+      }
+
+      &::after {
+        top: calc(50% - 4px);
+      }
+    }
+  }
+
+  &--invert {
+    .checkbox__label {
+      &::after {
+        border-left-color: color(white);
+        border-bottom-color: color(white);
+      }
+    }
+  }
+}
+
+.checkbox--confirm.checkbox--invert {
+  .checkbox__label {
+    color: rgba(color(white), 0.6);
+  }
+}
+
+.checkbox__input {
+  &:disabled {
+    pointer-events: none;
+  }
+}
+
+.checkbox__label {
+  position: relative;
+  display: block;
+  text-align: left;
+  padding-left: 32px;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    transition: duration(md) func(primary);
+    transform-origin: center;
+  }
+
+  &::before {
+    left: 0;
+    top: 2px;
+    width: 16px;
+    height: 16px;
+    border: 1px solid color(gray);
+  }
+
+  &::after {
+    opacity: 0;
+    top: 6px;
+    left: 4px;
+    width: 8px;
+    height: 5px;
+    border-left: 1px solid color(secondary);
+    border-bottom: 1px solid color(secondary);
+    transform: rotate(-45deg);
+  }
+
+  @include hover {
+    &::before {
+      border-color: color(secondary);
+    }
+  }
+}
+
+.checkbox__input:checked ~ .checkbox__label {
+  &::after {
+    opacity: 1;
+  }
+}

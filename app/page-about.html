@@ -1,0 +1,979 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <title>ТД Время</title>
+    <meta name="description" content="Крупнейший отечественный производитель и поставщик табачных изделий">
+    <meta name="keywords" content="Табачные изделия, сигареты">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="address=no">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+    <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#431b11">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="./styles/styles.css">
+  </head>
+  <body>
+    <header class="page-header js-header-scroll js-page-header">
+      <div class="page-header__wrap">
+        <ul class="page-header__list">
+          <li class="page-header__item">
+            <button class="button-nav page-header__button-nav js-button-page-nav" aria-label="Открыть меню" type="button">
+              <span class="button-nav__icon">
+                <span class="button-nav__lines">
+                </span>
+              </span>
+            </button>
+          </li>
+          <li class="page-header__item page-header__item--callback">
+            <button class="button-icon js-open-page-callback" type="button">
+              <svg class="button-icon__icon">
+                <use xlink:href="./assets/images/sprites/sprite.svg#tel"></use>
+              </svg>
+            </button>
+          </li>
+        </ul>
+        <a class="logo logo--page page-header__logo" title="Перейти на главную страницу" href="main.html">
+          <img class="logo__image" src="./assets/images/logo-primary.svg" alt=" ">
+        </a>
+        <nav class="page-header__panel js-panel-page-nav" aria-label="Основное меню" itemscope itemtype="http://schema.org/SiteNavigationElement">
+          <button class="button-close page-header__panel-close js-panel-page-close" aria-label="Закрыть окно" type="button">
+            <span class="button-close__icon">
+            </span>
+          </button>
+          <div class="page-header__panel-wrap">
+            <ul class="page-nav page-header__page-nav">
+              <li class="page-nav__item active" itemprop="name">
+                <a class="page-nav__link" href="javascript:void(0)" itemprop="url">О компании
+                </a>
+              </li>
+              <li class="page-nav__item" itemprop="name">
+                <a class="page-nav__link" href="javascript:void(0)" itemprop="url">Продукция
+                </a>
+              </li>
+              <li class="page-nav__item" itemprop="name">
+                <a class="page-nav__link" href="page-delivery.html" itemprop="url">Производство
+                </a>
+              </li>
+              <li class="page-nav__item" itemprop="name">
+                <a class="page-nav__link" href="page-contacts.html" itemprop="url">FAQ
+                </a>
+              </li>
+              <li class="page-nav__item" itemprop="name">
+                <a class="page-nav__link" href="page-contacts.html" itemprop="url">Сертификаты
+                </a>
+              </li>
+              <li class="page-nav__item" itemprop="name">
+                <a class="page-nav__link" href="page-contacts.html" itemprop="url">Статьи
+                </a>
+              </li>
+              <li class="page-nav__item" itemprop="name">
+                <a class="page-nav__link" href="page-contacts.html" itemprop="url">Контакты
+                </a>
+              </li>
+            </ul>
+            <div class="callback page-header__callback page-header__callback--panel">
+              <a class="callback__link" href="tel:+79785001445">+7 (978) <span class="callback__number">500-14-45</span>
+              </a>
+              <button class="callback__button js-callback-button" type="button">Обратный звонок
+              </button>
+            </div>
+          </div>
+        </nav>
+        <nav class="page-header__lang-nav" aria-label="Языковое меню" itemscope itemtype="http://schema.org/SiteNavigationElement">
+          <ul class="lang-nav">
+            <li class="lang-nav__item lang-nav__item--lvl-2" itemprop="name">
+              <a class="lang-nav__link js-lang-nav-link" aria-haspopup="true" href="javascript:void(0)" rel="alternate" hreflang="ru" itemprop="url">Ru
+              </a>
+              <ul class="lang-nav-lvl-2 lang-nav__lvl-2">
+                <li class="lang-nav-lvl-2__item" itemprop="name">
+                  <a class="lang-nav-lvl-2__link" href="javascript:void(0)" rel="alternate" hreflang="en" itemprop="url">En
+                  </a>
+                </li>
+                <li class="lang-nav-lvl-2__item" itemprop="name">
+                  <a class="lang-nav-lvl-2__link" href="javascript:void(0)" rel="alternate" hreflang="fr" itemprop="url">Fr
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <div class="page-header__dialog page-header__dialog--callback js-page-dialog js-page-dialog-callback">
+          <div class="page-header__dialog-wrap">
+            <button class="button-close page-header__dialog-close js-close-page-dialog" aria-label="Закрыть окно" type="button">
+              <span class="button-close__icon">
+              </span>
+            </button>
+            <div class="callback page-header__callback">
+              <a class="callback__link" href="tel:+79785001445">+7 (978) <span class="callback__number">500-14-45</span>
+              </a>
+              <button class="callback__button js-callback-button" type="button">Обратный звонок
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="overlay page-header__overlay js-page-header-overlay">
+        </div>
+      </div>
+    </header>
+    <main class="page-content page-content--bg-light page-content--no-pad-bottom">
+      <div class="page-content__wrap">
+        <h1 class="page-content__heading">О компании</h1>
+        <div class="teaser page-content__about-teaser">Компания осуществляет полный производственный цикл — от выращивания сырья, производства продукции до доставки потребителям
+        </div>
+      </div>
+      <section class="about-intro page-content__about-intro">
+        <div class="about-intro__wrap">
+          <div class="about-intro__column about-intro__column--image">
+            <figure class="about-intro__image-wrap">
+              <img class="about-intro__image" src="./assets/images/about-intro.jpg" alt=" ">
+            </figure>
+          </div>
+          <div class="about-intro__column about-intro__column--text">
+            <p>Более 15 лет предлагаемые компанией бренды представлены на рынке России и Украины, а также с недавнего времени компания открыла представительства в Европе, а именно в Швейцарии и Франции.</p>
+            <p>В торговых точках представлен самый широкий в регионе ассортимент табачной продукции. Наша фирма предоставляет возможность приобрести табачные изделия, как большой партией, так и сделать заказ на небольшую доставку от 1-го блока.</p>
+            <p>
+              Основные плюсы нашей компании – наличие широкого ассортимента  качественного товара по приемлемым ценам и предоставление комфортных транспортных услуг. Опытные специалисты гарантируют профессиональный подход
+              к менеджменту и логистике. Мы гарантируем индивидуальный подход к каждому заказчику.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="about-process page-content__about-process">
+        <div class="about-process__wrap">
+          <div class="about-process__text">
+            <p>
+              Стоит отметить, прежде чем табачные изделия нашей компании
+              попадают в оптовую и розничную продажу, наш табак проходит
+              несколько основных этапов его обработки:
+            </p>
+          </div>
+          <ul class="about-process__list">
+            <li class="about-process__item">кондиционирование и соусирование
+            </li>
+            <li class="about-process__item">резка и сушка резаного продукта
+            </li>
+            <li class="about-process__item">отделение табачной жилки и пыли
+            </li>
+            <li class="about-process__item">ароматизация, хранение
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="about-descr page-content__about-descr">
+        <div class="about-descr__wrap">
+          <div class="about-descr__text">
+            <p>Вот уже долгое время специализированные табачные компании являются нашими крупными оптовыми заказчиками.</p>
+            <p>Большой выбор и приятные цены нашей фирмы стали реальны, благодаря непосредственному ввозу сырья от ведущих иностранных изготовителей, дилерским контрактам со всеми крупными компаниями — дистрибьюторами в России и собственному производству.</p>
+            <p>Мы гарантируем быструю и качественную работу. Выбрать оптимальную схему сотрудничества и найти ответы на все волнующие Вас вопросы, всегда готовы специалисты нашей компании.</p>
+            <p>Мы гарантируем поставку продукции в ранее оговоренные сроки. Полный ассортимент табачной продукции все время находится на нашем складе. Мы готовы загружать и отправлять товар покупателю в самые сжатые сроки.</p>
+            <p>Представительства в крупных городах Крыма и РФ даёт возможность для быстрой доставки заказа в регионы.</p>
+          </div>
+          <div class="about-descr__image-wrap">
+            <img class="about-descr__image" src="./assets/images/about-descr.jpg" alt=" ">
+          </div>
+        </div>
+      </section>
+      <section class="about-features">
+        <div class="about-features__wrap">
+          <h2 class="about-features__heading">Производственная мощность и&nbsp;возможности компании</h2>
+          <ul class="about-features__list">
+            <li class="about-features__item">
+              <div class="item-w-number">
+                <div class="item-w-number__title">
+                  <b class="item-w-number__value">45
+                  </b>млрд сигарет в год
+                </div>
+                <p class="item-w-number__text">Производственная мощность сигаретного цеха
+                </p>
+              </div>
+            </li>
+            <li class="about-features__item">
+              <div class="item-w-number">
+                <div class="item-w-number__title">
+                  <b class="item-w-number__value">1,7%
+                  </b>доля продаж
+                </div>
+                <p class="item-w-number__text">Доля российского табачного рынка
+                </p>
+              </div>
+            </li>
+            <li class="about-features__item">
+              <div class="item-w-number">
+                <div class="item-w-number__title">
+                  <b class="item-w-number__value">76
+                  </b>в России
+                </div>
+                <p class="item-w-number__text">Представительства и подразделения в России
+                </p>
+              </div>
+            </li>
+            <li class="about-features__item">
+              <div class="item-w-number">
+                <div class="item-w-number__title">
+                  <b class="item-w-number__value">2
+                  </b>за рубежом
+                </div>
+                <p class="item-w-number__text">Представительства и подразделения за рубежом
+                </p>
+              </div>
+            </li>
+            <li class="about-features__item">
+              <div class="item-w-number">
+                <div class="item-w-number__title">
+                  <b class="item-w-number__value">12
+                  </b>наименований
+                </div>
+                <p class="item-w-number__text">Ассортимент табачных изделий
+                </p>
+              </div>
+            </li>
+            <li class="about-features__item">
+              <div class="item-w-number">
+                <div class="item-w-number__title">
+                  <b class="item-w-number__value">47<span class="items-w-number__unit">т</span>
+                  </b>табачного сырья
+                </div>
+                <p class="item-w-number__text">Производственная мощность табачного цеха
+                </p>
+              </div>
+            </li>
+            <li class="about-features__item">
+              <div class="item-w-number">
+                <div class="item-w-number__title">
+                  <b class="item-w-number__value">500
+                  </b>человек
+                </div>
+                <p class="item-w-number__text">Постоянный штат специалистов
+                </p>
+              </div>
+            </li>
+            <li class="about-features__item">
+              <div class="item-w-number">
+                <div class="item-w-number__title">
+                  <b class="item-w-number__value">210
+                  </b>гектаров
+                </div>
+                <p class="item-w-number__text">Площадь производственного комплекса компании
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="about-slider">
+        <div class="about-slider__wrap">
+          <h2 class="about-slider__heading">Ценности компании</h2>
+          <div class="about-slider__content">
+            <div class="about-slider__text-slider js-about-slider-text swiper-container nano">
+              <div class="swiper-wrapper">
+                <div class="about-slider__text-slide swiper-slide">
+                  <h3 class="about-slider__subheading">Качество и технологичность</h3>
+                  <div class="about-slider__text nano js-nano">
+                    <div class="nano-content">Высокотехнологичное оборудование оснащенное Высокотехнологичное оборудование оснащенное Высокотехнологичное оборудование оснащенное  системой компьютерного управления, позволяет полностью контролировать процесс производства. Наши специалисты контролируют каждую стадию производства от момента закупки сырья до поставки высококачественной продукции.</div>
+                  </div>
+                </div>
+                <div class="about-slider__text-slide swiper-slide">
+                  <h3 class="about-slider__subheading">Постоянный штат специалистов</h3>
+                  <div class="about-slider__text nano js-nano">
+                    <div class="nano-content">Высокотехнологичное оборудование оснащенное системой компьютерного управления, позволяет полностью контролировать процесс производства. Наши специалисты контролируют каждую стадию производства от момента закупки сырья до поставки высококачественной продукции.</div>
+                  </div>
+                </div>
+                <div class="about-slider__text-slide swiper-slide">
+                  <h3 class="about-slider__subheading">Ассортимент табачных изделий</h3>
+                  <div class="about-slider__text nano js-nano">
+                    <div class="nano-content">Высокотехнологичное оборудование оснащенное системой компьютерного управления, позволяет полностью контролировать процесс производства. Наши специалисты контролируют каждую стадию производства от момента закупки сырья до поставки высококачественной продукции.</div>
+                  </div>
+                </div>
+                <div class="about-slider__text-slide swiper-slide">
+                  <h3 class="about-slider__subheading">Качество и технологичность</h3>
+                  <div class="about-slider__text nano js-nano">
+                    <div class="nano-content">Высокотехнологичное оборудование оснащенное Высокотехнологичное оборудование оснащенное Высокотехнологичное оборудование оснащенное  системой компьютерного управления, позволяет полностью контролировать процесс производства. Наши специалисты контролируют каждую стадию производства от момента закупки сырья до поставки высококачественной продукции.</div>
+                  </div>
+                </div>
+                <div class="about-slider__text-slide swiper-slide">
+                  <h3 class="about-slider__subheading">Постоянный штат специалистов</h3>
+                  <div class="about-slider__text nano js-nano">
+                    <div class="nano-content">Высокотехнологичное оборудование оснащенное системой компьютерного управления, позволяет полностью контролировать процесс производства. Наши специалисты контролируют каждую стадию производства от момента закупки сырья до поставки высококачественной продукции.</div>
+                  </div>
+                </div>
+                <div class="about-slider__text-slide swiper-slide">
+                  <h3 class="about-slider__subheading">Ассортимент табачных изделий</h3>
+                  <div class="about-slider__text nano js-nano">
+                    <div class="nano-content">Высокотехнологичное оборудование оснащенное системой компьютерного управления, позволяет полностью контролировать процесс производства. Наши специалисты контролируют каждую стадию производства от момента закупки сырья до поставки высококачественной продукции.</div>
+                  </div>
+                </div>
+                <div class="about-slider__text-slide swiper-slide">
+                  <h3 class="about-slider__subheading">Качество и технологичность</h3>
+                  <div class="about-slider__text nano js-nano">
+                    <div class="nano-content">Высокотехнологичное оборудование оснащенное Высокотехнологичное оборудование оснащенное Высокотехнологичное оборудование оснащенное  системой компьютерного управления, позволяет полностью контролировать процесс производства. Наши специалисты контролируют каждую стадию производства от момента закупки сырья до поставки высококачественной продукции.</div>
+                  </div>
+                </div>
+                <div class="about-slider__text-slide swiper-slide">
+                  <h3 class="about-slider__subheading">Постоянный штат специалистов</h3>
+                  <div class="about-slider__text nano js-nano">
+                    <div class="nano-content">Высокотехнологичное оборудование оснащенное системой компьютерного управления, позволяет полностью контролировать процесс производства. Наши специалисты контролируют каждую стадию производства от момента закупки сырья до поставки высококачественной продукции.</div>
+                  </div>
+                </div>
+                <div class="about-slider__text-slide swiper-slide">
+                  <h3 class="about-slider__subheading">Ассортимент табачных изделий</h3>
+                  <div class="about-slider__text nano js-nano">
+                    <div class="nano-content">Высокотехнологичное оборудование оснащенное системой компьютерного управления, позволяет полностью контролировать процесс производства. Наши специалисты контролируют каждую стадию производства от момента закупки сырья до поставки высококачественной продукции.</div>
+                  </div>
+                </div>
+                <div class="about-slider__text-slide swiper-slide">
+                  <h3 class="about-slider__subheading">Качество и технологичность</h3>
+                  <div class="about-slider__text nano js-nano">
+                    <div class="nano-content">Высокотехнологичное оборудование оснащенное Высокотехнологичное оборудование оснащенное Высокотехнологичное оборудование оснащенное  системой компьютерного управления, позволяет полностью контролировать процесс производства. Наши специалисты контролируют каждую стадию производства от момента закупки сырья до поставки высококачественной продукции.</div>
+                  </div>
+                </div>
+                <div class="about-slider__text-slide swiper-slide">
+                  <h3 class="about-slider__subheading">Постоянный штат специалистов</h3>
+                  <div class="about-slider__text nano js-nano">
+                    <div class="nano-content">Высокотехнологичное оборудование оснащенное системой компьютерного управления, позволяет полностью контролировать процесс производства. Наши специалисты контролируют каждую стадию производства от момента закупки сырья до поставки высококачественной продукции.</div>
+                  </div>
+                </div>
+                <div class="about-slider__text-slide swiper-slide">
+                  <h3 class="about-slider__subheading">Ассортимент табачных изделий</h3>
+                  <div class="about-slider__text nano js-nano">
+                    <div class="nano-content">Высокотехнологичное оборудование оснащенное системой компьютерного управления, позволяет полностью контролировать процесс производства. Наши специалисты контролируют каждую стадию производства от момента закупки сырья до поставки высококачественной продукции.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="about-slider__nav">
+              <button class="control control--prev control--secondary js-about-slider-prev" type="button">
+                <svg class="control__icon">
+                  <use xlink:href="./assets/images/sprites/sprite.svg#arrow"></use>
+                </svg>
+              </button>
+              <button class="control control--next control--secondary js-about-slider-next" type="button">
+                <svg class="control__icon">
+                  <use xlink:href="./assets/images/sprites/sprite.svg#arrow"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="about-slider__image-slider js-about-slider-image swiper-container">
+              <div class="swiper-wrapper">
+                <div class="about-slider__image-slide swiper-slide">
+                  <img class="about-slider__image" src="./assets/images/slide01.jpg" alt=" ">
+                </div>
+                <div class="about-slider__image-slide swiper-slide">
+                  <img class="about-slider__image" src="./assets/images/slide02.jpg" alt=" ">
+                </div>
+                <div class="about-slider__image-slide swiper-slide">
+                  <img class="about-slider__image" src="./assets/images/slide03.jpg" alt=" ">
+                </div>
+                <div class="about-slider__image-slide swiper-slide">
+                  <img class="about-slider__image" src="./assets/images/slide01.jpg" alt=" ">
+                </div>
+                <div class="about-slider__image-slide swiper-slide">
+                  <img class="about-slider__image" src="./assets/images/slide02.jpg" alt=" ">
+                </div>
+                <div class="about-slider__image-slide swiper-slide">
+                  <img class="about-slider__image" src="./assets/images/slide03.jpg" alt=" ">
+                </div>
+                <div class="about-slider__image-slide swiper-slide">
+                  <img class="about-slider__image" src="./assets/images/slide01.jpg" alt=" ">
+                </div>
+                <div class="about-slider__image-slide swiper-slide">
+                  <img class="about-slider__image" src="./assets/images/slide02.jpg" alt=" ">
+                </div>
+                <div class="about-slider__image-slide swiper-slide">
+                  <img class="about-slider__image" src="./assets/images/slide03.jpg" alt=" ">
+                </div>
+                <div class="about-slider__image-slide swiper-slide">
+                  <img class="about-slider__image" src="./assets/images/slide01.jpg" alt=" ">
+                </div>
+                <div class="about-slider__image-slide swiper-slide">
+                  <img class="about-slider__image" src="./assets/images/slide02.jpg" alt=" ">
+                </div>
+                <div class="about-slider__image-slide swiper-slide">
+                  <img class="about-slider__image" src="./assets/images/slide03.jpg" alt=" ">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="agency-w-list page-content__agency-about">
+        <div class="agency-w-list__wrap">
+          <div class="agency-w-list__heading">Представительства</div>
+          <div class="agency-w-list__list-wrap js-more-content" data-more="1">
+            <ul class="agency-list agency-w-list__list agency-w-list__list--one">
+              <li class="agency-list__item">
+                <a class="agency-list__link" href="javascript:void(0)">Московская область
+                </a>
+              </li>
+              <li class="agency-list__item agency-list__item--main">
+                <a class="agency-list__link" href="javascript:void(0)">Республика Крым
+                </a>
+                <ul class="agency-list__lvl-2">
+                  <li class="agency-list__item-lvl-2">
+                    <a class="agency-list__link-lvl-2" href="javascript:void(0)">Бахчисарай
+                    </a>
+                  </li>
+                  <li class="agency-list__item-lvl-2">
+                    <a class="agency-list__link-lvl-2" href="javascript:void(0)">Джанкой
+                    </a>
+                  </li>
+                  <li class="agency-list__item-lvl-2">
+                    <a class="agency-list__link-lvl-2" href="javascript:void(0)">Евпатория
+                    </a>
+                  </li>
+                  <li class="agency-list__item-lvl-2">
+                    <a class="agency-list__link-lvl-2" href="javascript:void(0)">Керчь
+                    </a>
+                  </li>
+                  <li class="agency-list__item-lvl-2">
+                    <a class="agency-list__link-lvl-2" href="javascript:void(0)">Красноперекопск
+                    </a>
+                  </li>
+                  <li class="agency-list__item-lvl-2">
+                    <a class="agency-list__link-lvl-2" href="javascript:void(0)">Нижнегорский
+                    </a>
+                  </li>
+                  <li class="agency-list__item-lvl-2">
+                    <a class="agency-list__link-lvl-2" href="javascript:void(0)">Севастополь
+                    </a>
+                  </li>
+                  <li class="agency-list__item-lvl-2">
+                    <a class="agency-list__link-lvl-2" href="javascript:void(0)">Симферополь
+                    </a>
+                  </li>
+                  <li class="agency-list__item-lvl-2">
+                    <a class="agency-list__link-lvl-2" href="javascript:void(0)">Судак
+                    </a>
+                  </li>
+                  <li class="agency-list__item-lvl-2">
+                    <a class="agency-list__link-lvl-2" href="javascript:void(0)">Феодосия
+                    </a>
+                  </li>
+                  <li class="agency-list__item-lvl-2">
+                    <a class="agency-list__link-lvl-2" href="javascript:void(0)">Черноморское
+                    </a>
+                  </li>
+                  <li class="agency-list__item-lvl-2">
+                    <a class="agency-list__link-lvl-2" href="javascript:void(0)">Ялта
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="agency-list__item">
+                <a class="agency-list__link" href="javascript:void(0)">Алтайский край
+                </a>
+              </li>
+              <li class="agency-list__item">
+                <a class="agency-list__link" href="javascript:void(0)">Амурская область
+                </a>
+              </li>
+              <li class="agency-list__item">
+                <a class="agency-list__link" href="javascript:void(0)">Белгородской область
+                </a>
+              </li>
+              <li class="agency-list__item">
+                <a class="agency-list__link" href="javascript:void(0)">Воронежская область
+                </a>
+              </li>
+              <li class="agency-list__item">
+                <a class="agency-list__link" href="javascript:void(0)">Иркутская область
+                </a>
+              </li>
+              <li class="agency-list__item">
+                <a class="agency-list__link" href="javascript:void(0)">Кемеровская область
+                </a>
+              </li>
+            </ul>
+            <div class="agency-w-list__list-two-wrap">
+              <ul class="agency-list agency-w-list__list agency-w-list__list--two">
+                <li class="agency-list__item">
+                  <a class="agency-list__link" href="javascript:void(0)">Краснодарский край
+                  </a>
+                </li>
+                <li class="agency-list__item">
+                  <a class="agency-list__link" href="javascript:void(0)">Красноярский край
+                  </a>
+                </li>
+                <li class="agency-list__item">
+                  <a class="agency-list__link" href="javascript:void(0)">Курская область
+                  </a>
+                </li>
+                <li class="agency-list__item">
+                  <a class="agency-list__link" href="javascript:void(0)">Нижегородская область
+                  </a>
+                </li>
+                <li class="agency-list__item">
+                  <a class="agency-list__link" href="javascript:void(0)">Новосибирская область
+                  </a>
+                </li>
+                <li class="agency-list__item">
+                  <a class="agency-list__link" href="javascript:void(0)">Оренбургская область
+                  </a>
+                </li>
+                <li class="agency-list__item">
+                  <a class="agency-list__link" href="javascript:void(0)">Орловская область
+                  </a>
+                </li>
+                <li class="agency-list__item">
+                  <a class="agency-list__link" href="javascript:void(0)">Пермский край
+                  </a>
+                </li>
+                <li class="agency-list__item">
+                  <a class="agency-list__link" href="javascript:void(0)">Республика Башкортостан
+                  </a>
+                </li>
+                <li class="agency-list__item">
+                  <a class="agency-list__link" href="javascript:void(0)">Республика Хакасия
+                  </a>
+                </li>
+                <li class="agency-list__item">
+                  <a class="agency-list__link" href="javascript:void(0)">Республика Тыва
+                  </a>
+                </li>
+                <li class="agency-list__item">
+                  <a class="agency-list__link" href="javascript:void(0)">Республика Адыгея
+                  </a>
+                </li>
+                <li class="agency-list__item">
+                  <a class="agency-list__link" href="javascript:void(0)">Саратовская область
+                  </a>
+                </li>
+                <li class="agency-list__item">
+                  <a class="agency-list__link" href="javascript:void(0)">Свердловская область
+                  </a>
+                </li>
+                <li class="agency-list__item">
+                  <a class="agency-list__link" href="javascript:void(0)">Ставропольский край
+                  </a>
+                </li>
+                <li class="agency-list__item">
+                  <a class="agency-list__link" href="javascript:void(0)">Самарская область
+                  </a>
+                </li>
+                <li class="agency-list__item">
+                  <a class="agency-list__link" href="javascript:void(0)">Тверская область
+                  </a>
+                </li>
+                <li class="agency-list__item">
+                  <a class="agency-list__link" href="javascript:void(0)">Тюменская область
+                  </a>
+                </li>
+                <li class="agency-list__item">
+                  <a class="agency-list__link" href="javascript:void(0)">Томская область
+                  </a>
+                </li>
+                <li class="agency-list__item">
+                  <a class="agency-list__link" href="javascript:void(0)">Тульская область
+                  </a>
+                </li>
+                <li class="agency-list__item">
+                  <a class="agency-list__link" href="javascript:void(0)">Челябинская область
+                  </a>
+                </li>
+                <li class="agency-list__item">
+                  <a class="agency-list__link" href="javascript:void(0)">Ярославская область
+                  </a>
+                </li>
+              </ul>
+              <div class="agency agency-w-list__agency">
+                <div class="agency__map">
+                  <picture class="agency__picture">
+                    <source media="(min-width: 768px)" srcset="./assets/images/map-outline-1166@1x.webp, ./assets/images/map-outline-1166@2x.webp 2x" type="image/webp">
+                    <source media="(min-width: 768px)" srcset="./assets/images/map-outline-1166@1x.png, ./assets/images/map-outline-1166@2x.png 2x">
+                    <source media="(min-width: 420px)" srcset="./assets/images/map-outline-768@1x.webp, ./assets/images/map-outline-768@2x.webp 2x" type="image/webp">
+                    <source media="(min-width: 420px)" srcset="./assets/images/map-outline-768@1x.png, ./assets/images/map-outline-768@2x.png 2x">
+                    <source srcset="./assets/images/map-outline-420@1x.webp, ./assets/images/map-outline-420@2x.webp 2x" type="image/webp"><img class="agency__image" src="./assets/images/map-outline-420@1x.png" srcset="./assets/images/map-outline-420@2x.png 2x" alt="Карта России">
+                  </picture>
+                  <ul class="agency__list">
+                    <li class="agency__item agency__item--main">
+                      <div class="pin-item pin-item--main">
+                        <div class="pin-item__text">Головной офис
+                        </div>
+                        <div class="pin-item__descr">Республика Крым
+                        </div>
+                      </div>
+                    </li>
+                    <li class="agency__item agency__item--moscow">
+                      <div class="pin-item">
+                        <svg class="pin-item__icon">
+                          <use xlink:href="./assets/images/sprites/sprite.svg#pin"></use>
+                        </svg>
+                        <div class="pin-item__text">Москва
+                        </div>
+                      </div>
+                    </li>
+                    <li class="agency__item agency__item--peterburg">
+                      <div class="pin-item">
+                        <svg class="pin-item__icon">
+                          <use xlink:href="./assets/images/sprites/sprite.svg#pin"></use>
+                        </svg>
+                        <div class="pin-item__text">Санкт-Петербург
+                        </div>
+                      </div>
+                    </li>
+                    <li class="agency__item agency__item--barnaul">
+                      <div class="pin-item">
+                        <svg class="pin-item__icon">
+                          <use xlink:href="./assets/images/sprites/sprite.svg#pin"></use>
+                        </svg>
+                        <div class="pin-item__text">Барнаул
+                        </div>
+                      </div>
+                    </li>
+                    <li class="agency__item agency__item--irkutsk">
+                      <div class="pin-item">
+                        <svg class="pin-item__icon">
+                          <use xlink:href="./assets/images/sprites/sprite.svg#pin"></use>
+                        </svg>
+                        <div class="pin-item__text">Иркутск
+                        </div>
+                      </div>
+                    </li>
+                    <li class="agency__item agency__item--kazan">
+                      <div class="pin-item">
+                        <svg class="pin-item__icon">
+                          <use xlink:href="./assets/images/sprites/sprite.svg#pin"></use>
+                        </svg>
+                        <div class="pin-item__text">Казань
+                        </div>
+                      </div>
+                    </li>
+                    <li class="agency__item agency__item--krasnodar">
+                      <div class="pin-item">
+                        <svg class="pin-item__icon">
+                          <use xlink:href="./assets/images/sprites/sprite.svg#pin"></use>
+                        </svg>
+                        <div class="pin-item__text">Краснодар
+                        </div>
+                      </div>
+                    </li>
+                    <li class="agency__item agency__item--neftecamsk">
+                      <div class="pin-item">
+                        <svg class="pin-item__icon">
+                          <use xlink:href="./assets/images/sprites/sprite.svg#pin"></use>
+                        </svg>
+                        <div class="pin-item__text">Нефтекамск
+                        </div>
+                      </div>
+                    </li>
+                    <li class="agency__item agency__item--orel">
+                      <div class="pin-item pin-item--text-before">
+                        <svg class="pin-item__icon">
+                          <use xlink:href="./assets/images/sprites/sprite.svg#pin"></use>
+                        </svg>
+                        <div class="pin-item__text">Орёл
+                        </div>
+                      </div>
+                    </li>
+                    <li class="agency__item agency__item--rostov">
+                      <div class="pin-item">
+                        <svg class="pin-item__icon">
+                          <use xlink:href="./assets/images/sprites/sprite.svg#pin"></use>
+                        </svg>
+                        <div class="pin-item__text">Ростов-на-Дону
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="button button--size-md button--shadow agency-w-list__button js-more-button-mob" type="button">Смотреть больше
+          </button>
+        </div>
+      </div>
+      <div class="offer">
+        <div class="offer__wrap">
+          <div class="offer__content">
+            <h3 class="offer__heading">
+              Остались вопросы?
+              <span class="offer__heading--accent">заполните форму</span>
+            </h3>
+            <p class="offer__text">Специалист нашей компании свяжется с Вами в&nbsp;ближайшее время</p>
+          </div>
+          <div class="card card--dark offer__card">
+            <form action="/" method="post" accept-charset="UTF-8">
+              <div class="card__field-group">
+                <label class="field field--w-icon field--border-bottom card__field">
+                  <span class="hidden">Ваше имя
+                  </span>
+                  <input class="field__input" tabindex="0" placeholder="Ваше имя" name="user" required type="text" aria-required="true" aria-invalid="false">
+                  <svg class="field__icon">
+                    <use xlink:href="./assets/images/sprites/sprite.svg#user"></use>
+                  </svg>
+                </label>
+                <label class="field field--w-icon field--border-bottom card__field">
+                  <span class="hidden">Ваш телефон
+                  </span>
+                  <input class="field__input" tabindex="0" placeholder="+7 (___) ___-__-__" name="tel" required type="tel" aria-required="true" aria-invalid="false">
+                  <svg class="field__icon">
+                    <use xlink:href="./assets/images/sprites/sprite.svg#tel"></use>
+                  </svg>
+                </label>
+                <label class="field field--w-icon field--border-bottom card__field">
+                  <span class="hidden">Введите сообщение
+                  </span>
+                  <textarea class="field__input" tabindex="0" placeholder="Сообщение" name="message">
+                  </textarea>
+                  <svg class="field__icon">
+                    <use xlink:href="./assets/images/sprites/sprite.svg#message"></use>
+                  </svg>
+                </label>
+              </div>
+              <div class="card__submit-wrap">
+                <label class="button button--shadow button--size-md card__submit">
+                  <input class="hidden" type="submit">
+                  Отправить
+                </label>
+              </div>
+              <div class="offer__confirm-wrap">
+                <label class="checkbox checkbox--confirm checkbox--invert">
+                  <input class="hidden checkbox__input" required checked type="checkbox">
+                  <span class="checkbox__label">Даю согласие на обработку моих персональных данных
+                  </span>
+                </label>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer__top">
+        <div class="footer__wrap">
+          <div class="footer__about">
+            <div class="footer__about-company">
+              <div class="footer__logo-wrap">
+                <a class="logo logo--secondary footer__logo" title="Перейти на главную страницу" href="main.html">
+                  <img class="logo__image" src="./assets/images/logo-white.svg" alt=" ">
+                </a>
+              </div>
+              <p class="footer__text footer__text--info">Крупнейший отечественный <br>производитель и поставщик <br>табачных изделий
+              </p>
+            </div>
+            <div class="footer__about-contacts">
+              <div class="footer__phone-wrap">
+                <a class="footer__phone" href="tel:+79785001445">+7 (978) 500-14-45
+                </a>
+              </div>
+              <p class="footer__text footer__text--address">Респ. Крым, г. Симферополь, <br>ул. Набережная им. 60-летия <br>СССР, д.34
+              </p>
+            </div>
+          </div>
+          <div class="footer__nav">
+            <div class="footer__nav-item footer__nav-item--dropdown footer__nav-item--company js-footer-nav-dropdown" role="navigation" aria-label="Дополнительное меню" itemscope itemtype="http://schema.org/SiteNavigationElement">
+              <h4 class="footer__title js-footer-nav-dropdown-button">Компания</h4>
+              <ul class="footer__list">
+                <li class="footer__item" itemprop="name">
+                  <a href="javascript:void(0)" itemprop="url">Компания
+                  </a>
+                </li>
+                <li class="footer__item" itemprop="name">
+                  <a href="javascript:void(0)" itemprop="url">Производство
+                  </a>
+                </li>
+                <li class="footer__item" itemprop="name">
+                  <a href="javascript:void(0)" itemprop="url">FAQ
+                  </a>
+                </li>
+                <li class="footer__item" itemprop="name">
+                  <a href="javascript:void(0)" itemprop="url">Сертификаты
+                  </a>
+                </li>
+                <li class="footer__item" itemprop="name">
+                  <a href="javascript:void(0)" itemprop="url">Статьи
+                  </a>
+                </li>
+                <li class="footer__item" itemprop="name">
+                  <a href="javascript:void(0)" itemprop="url">Контакты
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__nav-item footer__nav-item--dropdown footer__nav-item--production js-footer-nav-dropdown" role="navigation" aria-label="Дополнительное меню" itemscope itemtype="http://schema.org/SiteNavigationElement">
+              <h4 class="footer__title js-footer-nav-dropdown-button">Продукция</h4>
+              <div class="footer__nav-row">
+                <ul class="footer__list">
+                  <li class="footer__item" itemprop="name">
+                    <a href="javascript:void(0)" itemprop="url">DUNE Silver Label
+                    </a>
+                  </li>
+                  <li class="footer__item" itemprop="name">
+                    <a href="javascript:void(0)" itemprop="url">DUNE Red Label
+                    </a>
+                  </li>
+                  <li class="footer__item" itemprop="name">
+                    <a href="javascript:void(0)" itemprop="url">DUNE Blue Label
+                    </a>
+                  </li>
+                  <li class="footer__item" itemprop="name">
+                    <a href="javascript:void(0)" itemprop="url">EUROPE classical quality
+                    </a>
+                  </li>
+                  <li class="footer__item" itemprop="name">
+                    <a href="javascript:void(0)" itemprop="url">FANTOM Classic Blue
+                    </a>
+                  </li>
+                  <li class="footer__item" itemprop="name">
+                    <a href="javascript:void(0)" itemprop="url">FANTOM Classic Red
+                    </a>
+                  </li>
+                </ul>
+                <ul class="footer__list">
+                  <li class="footer__item" itemprop="name">
+                    <a href="javascript:void(0)" itemprop="url">VXR Elegant Red
+                    </a>
+                  </li>
+                  <li class="footer__item" itemprop="name">
+                    <a href="javascript:void(0)" itemprop="url">VXR Elegant Silver
+                    </a>
+                  </li>
+                  <li class="footer__item" itemprop="name">
+                    <a href="javascript:void(0)" itemprop="url">Біле Сонце класичні
+                    </a>
+                  </li>
+                  <li class="footer__item" itemprop="name">
+                    <a href="javascript:void(0)" itemprop="url">Біле Сонце оригінальні
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="footer__wrap">
+          <p class="footer__copyright">г. Симферополь &copy;&nbsp;Copyright 2019&nbsp;г.
+          </p>
+          <p class="footer__notify">Минздрав предупреждает курение опасно для вашего здоровья
+          </p>
+          <div class="footer__madein">Сделанo в
+            <a title="Sheer" href="https://sheer82.ru/"><span class="hidden">'Sheer'</span>
+              <svg>
+                <use xlink:href="./assets/images/sprites/sprite.svg#sheer"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="footer__conf">
+            <a class="footer__conf-link" href="javascript:void(0)">Политика конфиденциальности
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <button class="button-up js-page-up" type="button">Наверх
+    </button>
+    <div class="modal js-callback-modal js-modal">
+      <div class="overlay modal__overlay active js-modal-overlay">
+      </div>
+      <div class="modal__dialog">
+        <button class="button-close modal__close js-modal-close" aria-label="Закрыть окно" type="button">
+          <span class="button-close__icon">
+          </span>
+        </button>
+        <div class="modal__dialog-inner">
+          <h3 class="modal__heading">Заказать звонок
+          </h3>
+          <p class="modal__text">Заполните форму и наш специалист перезвонит Вам в ближайшее время
+          </p>
+          <form action="/" method="post" accept-charset="UTF-8">
+            <div class="modal__field-group">
+              <label class="field field--w-icon field--border-bottom modal__field">
+                <span class="hidden">Ваше имя
+                </span>
+                <input class="field__input" tabindex="0" placeholder="Ваше имя" name="user" required type="text" aria-required="true" aria-invalid="false">
+                <svg class="field__icon">
+                  <use xlink:href="./assets/images/sprites/sprite.svg#user"></use>
+                </svg>
+              </label>
+              <label class="field field--w-icon field--border-bottom modal__field">
+                <span class="hidden">Ваш телефон
+                </span>
+                <input class="field__input" tabindex="0" placeholder="+7 (___) ___-__-__" name="tel" required type="tel" aria-required="true" aria-invalid="false">
+                <svg class="field__icon">
+                  <use xlink:href="./assets/images/sprites/sprite.svg#tel"></use>
+                </svg>
+              </label>
+            </div>
+            <div class="modal__submit-wrap">
+              <label class="button button--shadow button--size-md modal__submit">
+                <input class="hidden" type="submit">
+                Отправить
+              </label>
+            </div>
+            <div class="modal__confirm-wrap">
+              <label class="checkbox checkbox--confirm form-feedback__confirm">
+                <input class="hidden checkbox__input" required checked type="checkbox">
+                <span class="checkbox__label">Даю согласие на обработку моих персональных данных
+                </span>
+              </label>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="modal js-callback-modal js-modal">
+      <div class="overlay modal__overlay active js-modal-overlay">
+      </div>
+      <div class="modal__dialog">
+        <button class="button-close modal__close js-modal-close" aria-label="Закрыть окно" type="button">
+          <span class="button-close__icon">
+          </span>
+        </button>
+        <div class="modal__dialog-inner">
+          <h3 class="modal__heading">Ваш заказ: EUROPE classical quality
+          </h3>
+          <form action="/" method="post" accept-charset="UTF-8">
+            <div class="modal__field-group">
+              <label class="field field--w-icon field--border-bottom modal__field">
+                <span class="hidden">Ваше имя
+                </span>
+                <input class="field__input" tabindex="0" placeholder="Ваше имя" name="user" required type="text" aria-required="true" aria-invalid="false">
+                <svg class="field__icon">
+                  <use xlink:href="./assets/images/sprites/sprite.svg#user"></use>
+                </svg>
+              </label>
+              <label class="field field--w-icon field--border-bottom modal__field">
+                <span class="hidden">Ваш телефон
+                </span>
+                <input class="field__input" tabindex="0" placeholder="+7 (___) ___-__-__" name="tel" required type="tel" aria-required="true" aria-invalid="false">
+                <svg class="field__icon">
+                  <use xlink:href="./assets/images/sprites/sprite.svg#tel"></use>
+                </svg>
+              </label>
+            </div>
+            <div class="modal__submit-wrap">
+              <label class="button button--shadow button--size-md modal__submit">
+                <input class="hidden" type="submit">
+                Заказать
+              </label>
+            </div>
+            <div class="modal__confirm-wrap">
+              <label class="checkbox checkbox--confirm form-feedback__confirm">
+                <input class="hidden checkbox__input" required checked type="checkbox">
+                <span class="checkbox__label">Даю согласие на обработку моих персональных данных
+                </span>
+              </label>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="./scripts/libs/jquery.js"></script>
+    <script src="./scripts/libs/imask.js"></script>
+    <script src="./scripts/libs/svg4everybody.js"></script>
+    <script src="./scripts/libs/ofi.js"></script>
+    <script src="./scripts/libs/jquery.fancybox.js"></script>
+    <script src="./scripts/libs/picturefill.js"></script>
+    <script src="./scripts/libs/jquery.nanoscroller.js"></script>
+    <script src="./scripts/libs/swiper.js"></script>
+    <script src="./scripts/scripts.js"></script>
+  </body>
+</html>

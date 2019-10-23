@@ -1,0 +1,24 @@
+.product {
+
+}
+
+.product__image {
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+@include respond-to(large) {
+  .product {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .product__image {
+    margin: 0;
+    margin-left: 50px;
+  }
+
+  .product__info {
+    width: 390px;
+  }
+}

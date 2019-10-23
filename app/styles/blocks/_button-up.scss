@@ -1,0 +1,52 @@
+.button-up {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 3000;
+  display: none;
+  width: 60px;
+  height: 60px;
+  padding: 5px;
+  padding-top: 10px;
+  border: 1px solid rgba(color(secondary), 0.3);
+  border-radius: 50%;
+  background-color: rgba(color(white), 0.9);
+  color: color(primary);
+  font-size: 11px;
+  text-align: center;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 14px;
+    left: 50%;
+    transform: translate(-50%) rotate(-45deg);
+    width: 11px;
+    height: 11px;
+    border-top: 1px solid currentColor;
+    border-right: 1px solid currentColor;
+  }
+
+  @include hover {
+    background-color: color(secondary);
+    color: color(white);
+  }
+
+  &.active {
+    display: block;
+  }
+}
+
+@include respond-to(medium) {
+  .button-up {
+    bottom: 30px;
+    right: 30px;
+  }
+}
+
+@include respond-to(large) {
+  .button-up {
+    bottom: 40px;
+    right: 40px;
+  }
+}

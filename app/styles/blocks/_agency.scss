@@ -1,0 +1,205 @@
+.agency {
+
+}
+
+.agency__wrap {
+  @include wrapper;
+}
+
+.agency__heading {
+  margin: 0;
+}
+
+.agency__picture,
+.agency__image {
+  display: block;
+  width: 100%;
+}
+
+.agency__picture {
+  margin-bottom: 20px;
+}
+
+.agency__list {
+  position: relative;
+  z-index: 1;
+  width: 200px;
+  @include ul-no;
+  margin-top: -80px;
+  margin-bottom: 30px;
+  padding-top: 10px;
+  background-color: rgba(color(white), 0.7);
+}
+
+.agency__item {
+  margin-bottom: 8px;
+
+  &--main {
+    margin-bottom: 10px;
+  }
+}
+
+.agency__button {
+  width: 100%;
+}
+
+@include respond-to(420px) {
+  .agency__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -100px;
+    width: 380px;
+  }
+
+  .agency__item {
+    width: 50%;
+
+    &--main {
+      width: 100%;
+    }
+  }
+}
+
+@include respond-to(medium) {
+  .agency__picture {
+    margin-top: -30px;
+  }
+
+  .agency__map {
+    position: relative;
+  }
+
+  .agency__list {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+    background-color: transparent;
+  }
+
+  .agency__item {
+    position: absolute;
+    z-index: 1;
+    transform: translate(-10px, -27px);
+    width: auto;
+    margin-bottom: 0;
+
+    &--main {
+      top: 60%;
+      left: -10px;
+      z-index: 2;
+
+      .pin-item__descr {
+        width: 100px;
+      }
+    }
+
+    &--moscow {
+      top: 54%;
+      left: 18.4%;
+    }
+
+    &--peterburg {
+      top: 37%;
+      left: 14%;
+    }
+
+    &--barnaul {
+      top: 89%;
+      left: 45.5%;
+      z-index: 2;
+    }
+
+    &--irkutsk {
+      top: 93%;
+      left: 60%;
+    }
+
+    &--kazan {
+      top: 61.5%;
+      left: 24%;
+    }
+
+    &--krasnodar {
+      top: 73%;
+      left: 6.5%;
+      z-index: 2;
+    }
+
+    &--neftecamsk {
+      top: 69.6%;
+      left: 27%;
+
+      .pin-item {
+        display: block;
+
+        .pin-item__icon {
+          margin-bottom: 5px;
+        }
+      }
+    }
+
+    &--orel {
+      top: 51.5%;
+      left: 12.5%;
+      transform: translate(calc(-100% + 10px), -27px);
+    }
+
+    &--rostov {
+      top: 67.8%;
+      left: 10%;
+    }
+  }
+
+  .agency__button {
+    width: auto;
+  }
+}
+
+@include respond-to(large) {
+  .agency__picture {
+    margin-top: -50px;
+    margin-left: -20px;
+    margin-right: -20px;
+    width: auto;
+    margin-bottom: 0;
+  }
+
+  .agency__list {
+    left: -20px;
+    right: -20px;
+    width: auto;
+  }
+
+  .agency__item {
+    transform: translate(-13px, -34px);
+
+    &--main {
+      left: 30px;
+    }
+
+    &--neftecamsk {
+      .pin-item {
+        display: flex;
+
+        .pin-item__icon {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    &--orel {
+      transform: translate(calc(-100% + 13px), -34px);
+    }
+  }
+
+  .agency__button {
+    margin-top: -5px;
+    margin-left: 100px;
+  }
+}

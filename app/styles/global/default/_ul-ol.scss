@@ -1,0 +1,30 @@
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  padding-left: 1em;
+  list-style-position: outside;
+}
+
+ul {
+  li {
+    list-style-image: url("data:image/svg+xml;charset=utf8,%3Csvg preserveAspectRatio='xMinYMax' fill='rgb(67,27,17)' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='2' cy='2' r='1.8'/%3E%3C/svg%3E");
+  }
+}
+
+li {
+  margin: 0;
+  margin-bottom: get($y, small, size-20);
+}
+
+@include respond-to(medium) {
+  li {
+    margin-bottom: get($y, medium, size-20);
+  }
+}
+
+@include respond-to(large) {
+  li {
+    margin-bottom: get($y, large, size-20);
+  }
+}

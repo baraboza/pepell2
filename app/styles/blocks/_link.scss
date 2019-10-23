@@ -1,0 +1,30 @@
+.link {
+  position: relative;
+  // display: inline;
+  padding-bottom: 2px;
+  text-decoration: none;
+  font-size: 14px;
+  color: color(secondary);
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 1;
+    height: 1px;
+    background-color: color(secondary);
+    transition: duration(md) func(primary);
+  }
+
+  @include hover {
+    &::after {
+      opacity: 0;
+    }
+  }
+
+  &--uppercase {
+    text-transform: uppercase;
+  }
+}

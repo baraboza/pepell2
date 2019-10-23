@@ -1,0 +1,137 @@
+.offer {
+  background-color: color(primary);
+  color: color(white);
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.offer__wrap {
+  @include wrapper;
+}
+
+.offer__heading {
+  margin: 0;
+  margin-bottom: 20px;
+  color: color(secondary);
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.3;
+  text-align: center;
+  text-transform: uppercase;
+
+  &--accent {
+    display: block;
+    color: color(white);
+    font-weight: 400;
+    font-size: 24px;
+  }
+}
+
+.offer__text {
+  margin: 0;
+  margin-bottom: 20px;
+  color: color(white);
+  text-align: center;
+  font-size: 16px;
+}
+
+.offer__confirm-wrap {
+  margin-top: 20px;
+  text-align: center;
+
+  .checkbox__label {
+    &::before {
+
+    }
+  }
+}
+
+@include respond-to(medium) {
+  .offer {
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url('../assets/images/bg-offer.jpg');
+
+    @include mask(rgba(#140602, 0.65));
+  }
+
+  .offer__wrap {
+    position: relative;
+    z-index: 1;
+    display: flex;
+  }
+
+  .offer__heading {
+    margin-top: auto;
+    font-size: 40px;
+    text-align: left;
+
+    &--accent {
+      font-size: 36px;
+    }
+  }
+
+  .offer__text {
+    margin-bottom: auto;
+    font-size: 18px;
+    text-align: left;
+  }
+
+  .offer__content {
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 380px);
+    padding-bottom: 60px;
+    padding-right: 30px;
+  }
+
+  .offer__card {
+    width: 380px;
+  }
+
+  .offer__confirm-wrap {
+    position: absolute;
+    bottom: 0;
+    left: pads(medium);
+    width: calc(100% - 380px);
+    margin-top: 0;
+    text-align: left;
+  }
+}
+
+@include respond-to(large) {
+  .offer {
+    padding-top: 35px;
+    padding-bottom: 35px;
+  }
+
+  .offer__heading {
+    font-size: 48px;
+
+    &--accent {
+      font-size: 40px;
+    }
+  }
+
+  .offer__content {
+    width: calc(100% - 430px);
+    padding-right: 100px;
+    padding-bottom: 100px;
+  }
+
+  .offer__text {
+    font-size: 20px;
+  }
+
+  .offer__card {
+    width: 430px;
+  }
+
+  .offer__confirm-wrap {
+    bottom: 50px;
+    left: pads(large);
+    width: calc(100% - 430px);
+  }
+}

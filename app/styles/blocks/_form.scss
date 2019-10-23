@@ -1,0 +1,48 @@
+.form__group {
+  margin-bottom: 30px;
+}
+
+.form__field {
+  margin-bottom: 15px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.form__submit {
+  margin: 0 auto;
+}
+
+.form__submit-wrap {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.form__confirm {
+  text-align: center;
+}
+
+@include respond-to(medium) {
+  .form__group {
+    margin-bottom: 35px;
+  }
+
+  .form__submit-wrap {
+    margin-bottom: 25px;
+  }
+}
+
+@include respond-to(medium) {
+  .form__group {
+    margin-bottom: 40px;
+  }
+
+  .form__field {
+    margin-bottom: 20px;
+  }
+
+  .form__submit-wrap {
+    margin-bottom: 30px;
+  }
+}

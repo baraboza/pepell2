@@ -1,0 +1,45 @@
+.specification {
+  table-layout: auto;
+}
+
+.specification__caption {
+  margin-bottom: 5px;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.specification__tr {
+  &--total {
+    .specification__th,
+    .specification__td {
+      padding-top: 20px;
+
+      &:first-child {
+        font-weight: 500;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+
+.specification__th,
+.specification__td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: none;
+
+  &:first-child {
+    padding-left: 0;
+  }
+
+  &:last-child {
+    width: 140px;
+    padding-right: 0;
+  }
+}
+
+.specification__th {
+  font-weight: 500;
+}

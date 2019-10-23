@@ -1,0 +1,44 @@
+.lang-nav-lvl-2 {
+  @include ul-no;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  background-color: color(white);
+  border: 1px solid rgba(color(secondary), 0.4);
+}
+
+.lang-nav-lvl-2__item {
+  margin-bottom: 0;
+  color: color(secondary);
+  font-size: 16px;
+  font-weight: 400;
+  text-align: left;
+  text-transform: uppercase;
+  line-height: 20px;
+}
+
+.lang-nav-lvl-2__link {
+  position: relative;
+  display: block;
+  padding: 8px 20px;
+  text-decoration: none;
+  color: inherit;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 20px;
+    right: 20px;
+    bottom: 0;
+    height: 3px;
+    background-color: rgba(color(secondary), 0.4);
+    opacity: 0;
+    transition: duration(md) func(primary);
+  }
+
+  &:hover,
+  &:focus {
+    &::after {
+      opacity: 1;
+    }
+  }
+}

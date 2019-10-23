@@ -1,0 +1,134 @@
+.main-slider {
+  position: relative;
+  background-color: #140602;
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-image: linear-gradient(to bottom, #190905, rgba(#140602, 0.7) 30%);
+  }
+}
+
+.main-slider__wrap {
+  position: relative;
+  z-index: 1;
+  @include wrapper;
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+
+.main-slider__heading {
+  margin: 0;
+  margin-bottom: 30px;
+  color: color(white);
+  text-align: center;
+}
+
+.main-slider__slider {
+  margin-bottom: 30px;
+
+  .swiper-slide {
+    box-sizing: border-box;
+  }
+}
+
+.main-slider__nav {
+  position: relative;
+  padding: 0 44px;
+
+  .control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    &--prev {
+      left: 0;
+    }
+
+    &--next {
+      right: 0;
+    }
+  }
+
+  .swiper-container {
+    padding: 0 10px;
+  }
+}
+
+.main-slider__button-wrap {
+  display: flex;
+  flex-direction: column;
+
+  .main-slider-button {
+    flex-grow: 1;
+  }
+}
+
+.main-slider__pagination {
+  position: static;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+
+  .swiper-pagination-bullet {
+    display: block;
+    width: 24px;
+    height: 24px;
+    padding: 8px;
+    background-clip: content-box;
+    background-color: color(secondary);
+    opacity: 0.5;
+    outline: none;
+  }
+
+  .swiper-pagination-bullet-active {
+    opacity: 1;
+  }
+}
+//
+.main-slider__nav {
+  max-height: 0;
+  overflow: hidden;
+}
+
+@include respond-to(medium) {
+  .main-slider__heading {
+    margin-bottom: 40px;
+  }
+
+  .main-slider__wrap {
+    padding-bottom: 40px;
+  }
+
+  .main-slider__nav {
+    padding: 0 50px;
+  }
+
+  .main-slider__pagination {
+    display: none;
+  }
+
+  .main-slider__nav {
+    max-height: none;
+    overflow: visible;
+  }
+}
+
+@include respond-to(large) {
+  .main-slider__slider {
+    margin-bottom: 40px;
+  }
+
+  .main-slider__heading {
+    margin-bottom: 50px;
+  }
+}

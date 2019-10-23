@@ -1,0 +1,42 @@
+.callback {
+  color: inherit;
+}
+
+.callback__button,
+.callback__link {
+  flex-shrink: 0;
+  display: block;
+  width: auto;
+}
+
+.callback__button {
+  display: inline-block;
+  padding: 4px;
+  border-color: #262626;
+  font-size: 14px;
+  line-height: 1;
+  font-weight: 500;
+  color: color(secondary);
+  text-transform: uppercase;
+  text-decoration: none;
+
+  @include hover {
+    opacity: 0.6;
+  }
+}
+
+.callback__link {
+  display: inline-block;
+  padding: 4px;
+  font-size: 14px;
+  line-height: 1;
+  font-weight: 400;
+  color: inherit;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.callback__number {
+  font-weight: 700;
+  font-size: 18px;
+}

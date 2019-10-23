@@ -1,0 +1,129 @@
+.agency-w-list {
+  background-color: color(white);
+}
+
+.agency-w-list__wrap {
+  @include wrapper;
+  padding-top: 30px;
+  padding-bottom: 40px;
+}
+
+.agency-w-list__heading {
+  margin: 0;
+  margin-bottom: 30px;
+  color: color(primary);
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 1.3;
+  text-align: center;
+  text-transform: none;
+}
+
+.agency-w-list__agency {
+  display: none;
+}
+
+.agency-w-list__button {
+  width: 100%;
+  margin-top: 30px;
+}
+
+
+@include respond-to(small-lg) {
+  .agency-w-list__heading {
+    text-align: left;
+  }
+
+  .agency-w-list__button {
+    display: block;
+    width: 220px;
+    margin: 0 auto;
+    margin-top: 40px;
+  }
+
+  .agency-w-list__list-wrap {
+    column-count: 2;
+  }
+}
+
+@include respond-to(medium) {
+  .agency-w-list__heading {
+    width: 780px;
+    margin-bottom: 50px;
+    font-size: 40px;
+  }
+
+  .agency-w-list__wrap {
+    padding-top: 60px;
+    padding-bottom: 50px;
+  }
+
+  .agency-w-list__list-wrap {
+    column-count: 3;
+  }
+
+  .agency-w-list__button {
+    display: none;
+  }
+}
+
+@include respond-to(large) {
+  .agency-w-list__wrap {
+    padding-top: 70px;
+    padding-bottom: 60px;
+  }
+
+  .agency-w-list__heading {
+    margin-bottom: 60px;
+    font-size: 48px;
+  }
+
+  .agency-w-list__list-wrap {
+    columns: auto;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .agency-w-list__list-two-wrap {
+    width: 75%;
+  }
+
+  .agency-w-list__agency {
+    position: relative;
+    display: block;
+    width: 1170px;
+    margin-top: -70px;
+    margin-left: -30px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 20px;
+      left: 450px;
+      width: 100px;
+      height: 100px;
+      background: color(white);
+    }
+  }
+
+  .agency-w-list__list {
+    &--one {
+      width: 25%;
+    }
+
+    &--two {
+      position: relative;
+      z-index: 10;
+      column-count: 3;
+      column-width: 33%;
+
+      &::after {
+        content: '';
+        display: list-item;
+        width: 33%;
+        height: 10px;
+      }
+    }
+  }
+}

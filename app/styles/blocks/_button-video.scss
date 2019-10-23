@@ -1,0 +1,37 @@
+.button-video {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+  padding: 4px;
+  border-radius: 50%;
+  background-color: color(white);
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    .button-video__icon {
+      opacity: 0.6;
+    }
+  }
+}
+
+.button-video__icon {
+  display: block;
+  width: 14px;
+  height: 14px;
+  fill: #431b11;
+}
+
+@include respond-to(large) {
+  .button-video {
+    height: 60px;
+    width: 60px;
+  }
+
+  .button-video__icon {
+    width: 16px;
+    height: 16px;
+  }
+}

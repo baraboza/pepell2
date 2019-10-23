@@ -1,0 +1,22 @@
+.button-icon {
+  display: block;
+  height: 36px;
+  width: 36px;
+  padding: 9px;
+  border-radius: 50%;
+  text-decoration: none;
+  color: inherit;
+
+  &:hover,
+  &:focus,
+  &.active {
+    background-color: rgba(color(secondary), 0.2);
+  }
+}
+
+.button-icon__icon {
+  display: block;
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
+}

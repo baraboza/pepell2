@@ -1,0 +1,33 @@
+.features__wrap {
+  @include wrapper;
+}
+
+.features__list {
+  @include ul-no;
+}
+
+.features__item {
+  margin-bottom: 20px;
+}
+
+@include respond-to(medium) {
+  .features__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+
+  .features__item {
+    width: 50%;
+    margin-bottom: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@include respond-to(large) {
+  .features__item {
+    width: 33.33%;
+  }
+}

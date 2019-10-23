@@ -1,0 +1,101 @@
+.pin-item {
+  display: flex;
+  align-items: flex-end;
+
+  &--main {
+    display: block;
+
+    .pin-item__text {
+      color: color(primary);
+      font-weight: 400;
+    }
+  }
+}
+
+.pin-item__icon {
+  flex-shrink: 0;
+  display: block;
+  width: 14px;
+  height: 19px;
+  margin-right: 5px;
+  fill: color(primary);
+}
+
+.pin-item__text {
+  color: color(primary);
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 500;
+}
+
+.pin-item__descr {
+  color: color(primary);
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 500;
+}
+
+@include respond-to(medium) {
+  .pin-item {
+    &--main {
+      .pin-item__text {
+        position: relative;
+        margin-bottom: 10px;
+        background-color: #b93000;
+        color: color(white);
+
+        &::after {
+          content: "";
+          position: absolute;
+          bottom: -8px;
+          left: 15px;
+          border-top: 8px solid #b93000;
+          border-right: 6px solid transparent;
+          border-left: 6px solid transparent;
+        }
+      }
+    }
+
+    &--text-before {
+      .pin-item__text {
+        order: 1;
+        margin-right: 5px;
+      }
+
+      .pin-item__icon {
+        order: 2;
+        margin-right: 0;
+      }
+    }
+  }
+
+  .pin-item__text {
+    min-height: 24px;
+    padding: 3px 12px;
+    border-radius: 13px;
+    background-color: color(white);
+    box-shadow: 0 5px 10px 0 rgba(color(primary), 0.4);
+  }
+
+  .pin-item__icon {
+    width: 20px;
+    height: 27px;
+  }
+
+  .pin-item__descr {
+    font-size: 12px;
+    line-height: 14px;
+  }
+}
+
+@include respond-to(large) {
+  .pin-item__icon {
+    width: 26px;
+    height: 34px;
+  }
+
+  .pin-item__text {
+    min-height: 28px;
+    padding: 5px 15px;
+  }
+}

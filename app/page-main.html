@@ -1,0 +1,970 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <title>ТД Время</title>
+    <meta name="description" content="Крупнейший отечественный производитель и поставщик табачных изделий">
+    <meta name="keywords" content="Табачные изделия, сигареты">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="address=no">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+    <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#431b11">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="./styles/styles.css">
+  </head>
+  <body>
+    <div class="header-intro-wrap">
+      <header class="header js-header">
+        <div class="header__list-wrap">
+          <ul class="header__list header__list--mobile">
+            <li class="header__item">
+              <button class="button-nav header__button-nav js-button-nav" aria-label="Открыть меню" type="button">
+                <span class="button-nav__icon">
+                  <span class="button-nav__lines">
+                  </span>
+                </span>
+              </button>
+            </li>
+            <li class="header__item header__item--callback">
+              <button class="button-icon js-open-callback" type="button">
+                <svg class="button-icon__icon">
+                  <use xlink:href="./assets/images/sprites/sprite.svg#tel"></use>
+                </svg>
+              </button>
+            </li>
+            <li class="header__item header__item--limit">
+              <div class="limit header__limit">18+
+              </div>
+            </li>
+          </ul>
+          <ul class="header__list header__list--lang">
+            <li class="header__item">
+              <a class="header__lang active" href="javascript:void(0)">Ru
+              </a>
+            </li>
+            <li class="header__item">
+              <a class="header__lang" href="javascript:void(0)">En
+              </a>
+            </li>
+            <li class="header__item">
+              <a class="header__lang" href="javascript:void(0)">Fr
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="header__dialog header__dialog--callback js-dialog js-dialog-callback">
+          <div class="header__dialog-wrap">
+            <button class="button-close button-close--white header__dialog-close js-close-dialog" aria-label="Закрыть окно" type="button">
+              <span class="button-close__icon">
+              </span>
+            </button>
+            <div class="callback header__callback">
+              <a class="callback__link" href="tel:+79785001445">+7 (978) <span class="callback__number">500-14-45</span>
+              </a>
+              <button class="callback__button js-callback-button" type="button">Обратный звонок
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="header__company">
+          <a class="logo logo--primary header__logo">
+            <img class="logo__image" src="./assets/images/logo-white.svg" alt=" ">
+          </a>
+          <p class="header__info">Крупнейший отечественный <br>производитель и поставщик <br>табачных изделий
+          </p>
+        </div>
+        <nav class="header__panel js-panel-main-nav" aria-label="Основное меню" itemscope itemtype="http://schema.org/SiteNavigationElement">
+          <button class="button-close header__panel-close js-panel-main-close" aria-label="Закрыть окно" type="button">
+            <span class="button-close__icon">
+            </span>
+          </button>
+          <div class="header__panel-wrap">
+            <ul class="main-nav header__main-nav">
+              <li class="main-nav__item active" itemprop="name">
+                <a class="main-nav__link" href="javascript:void(0)" itemprop="url">О компании
+                </a>
+              </li>
+              <li class="main-nav__item" itemprop="name">
+                <a class="main-nav__link" href="javascript:void(0)" itemprop="url">Продукция
+                </a>
+              </li>
+              <li class="main-nav__item" itemprop="name">
+                <a class="main-nav__link" href="page-delivery.html" itemprop="url">Производство
+                </a>
+              </li>
+              <li class="main-nav__item" itemprop="name">
+                <a class="main-nav__link" href="page-contacts.html" itemprop="url">FAQ
+                </a>
+              </li>
+              <li class="main-nav__item" itemprop="name">
+                <a class="main-nav__link" href="page-contacts.html" itemprop="url">Сертификаты
+                </a>
+              </li>
+              <li class="main-nav__item" itemprop="name">
+                <a class="main-nav__link" href="page-contacts.html" itemprop="url">Статьи
+                </a>
+              </li>
+              <li class="main-nav__item" itemprop="name">
+                <a class="main-nav__link" href="page-contacts.html" itemprop="url">Контакты
+                </a>
+              </li>
+            </ul>
+            <div class="callback header__callback header__callback--panel">
+              <a class="callback__link" href="tel:+79785001445">+7 (978) <span class="callback__number">500-14-45</span>
+              </a>
+              <button class="callback__button js-callback-button" type="button">Обратный звонок
+              </button>
+            </div>
+          </div>
+        </nav>
+        <div class="overlay header__overlay js-header-overlay">
+        </div>
+        <div class="page-header js-header-scroll js-page-header" hidden>
+          <div class="page-header__wrap">
+            <ul class="page-header__list">
+              <li class="page-header__item">
+                <button class="button-nav page-header__button-nav js-button-page-nav" aria-label="Открыть меню" type="button">
+                  <span class="button-nav__icon">
+                    <span class="button-nav__lines">
+                    </span>
+                  </span>
+                </button>
+              </li>
+              <li class="page-header__item page-header__item--callback">
+                <button class="button-icon js-open-page-callback" type="button">
+                  <svg class="button-icon__icon">
+                    <use xlink:href="./assets/images/sprites/sprite.svg#tel"></use>
+                  </svg>
+                </button>
+              </li>
+            </ul>
+            <a class="logo logo--page page-header__logo">
+              <img class="logo__image" src="./assets/images/logo-primary.svg" alt=" ">
+            </a>
+            <nav class="page-header__panel js-panel-page-nav" aria-label="Основное меню" itemscope itemtype="http://schema.org/SiteNavigationElement">
+              <button class="button-close page-header__panel-close js-panel-page-close" aria-label="Закрыть окно" type="button">
+                <span class="button-close__icon">
+                </span>
+              </button>
+              <div class="page-header__panel-wrap">
+                <ul class="page-nav page-header__page-nav">
+                  <li class="page-nav__item active" itemprop="name">
+                    <a class="page-nav__link" href="javascript:void(0)" itemprop="url">О компании
+                    </a>
+                  </li>
+                  <li class="page-nav__item" itemprop="name">
+                    <a class="page-nav__link" href="javascript:void(0)" itemprop="url">Продукция
+                    </a>
+                  </li>
+                  <li class="page-nav__item" itemprop="name">
+                    <a class="page-nav__link" href="page-delivery.html" itemprop="url">Производство
+                    </a>
+                  </li>
+                  <li class="page-nav__item" itemprop="name">
+                    <a class="page-nav__link" href="page-contacts.html" itemprop="url">FAQ
+                    </a>
+                  </li>
+                  <li class="page-nav__item" itemprop="name">
+                    <a class="page-nav__link" href="page-contacts.html" itemprop="url">Сертификаты
+                    </a>
+                  </li>
+                  <li class="page-nav__item" itemprop="name">
+                    <a class="page-nav__link" href="page-contacts.html" itemprop="url">Статьи
+                    </a>
+                  </li>
+                  <li class="page-nav__item" itemprop="name">
+                    <a class="page-nav__link" href="page-contacts.html" itemprop="url">Контакты
+                    </a>
+                  </li>
+                </ul>
+                <div class="callback page-header__callback page-header__callback--panel">
+                  <a class="callback__link" href="tel:+79785001445">+7 (978) <span class="callback__number">500-14-45</span>
+                  </a>
+                  <button class="callback__button js-callback-button" type="button">Обратный звонок
+                  </button>
+                </div>
+              </div>
+            </nav>
+            <nav class="page-header__lang-nav" aria-label="Языковое меню" itemscope itemtype="http://schema.org/SiteNavigationElement">
+              <ul class="lang-nav">
+                <li class="lang-nav__item lang-nav__item--lvl-2" itemprop="name">
+                  <a class="lang-nav__link js-lang-nav-link" aria-haspopup="true" href="javascript:void(0)" rel="alternate" hreflang="ru" itemprop="url">Ru
+                  </a>
+                  <ul class="lang-nav-lvl-2 lang-nav__lvl-2">
+                    <li class="lang-nav-lvl-2__item" itemprop="name">
+                      <a class="lang-nav-lvl-2__link" href="javascript:void(0)" rel="alternate" hreflang="en" itemprop="url">En
+                      </a>
+                    </li>
+                    <li class="lang-nav-lvl-2__item" itemprop="name">
+                      <a class="lang-nav-lvl-2__link" href="javascript:void(0)" rel="alternate" hreflang="fr" itemprop="url">Fr
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+            <div class="page-header__dialog page-header__dialog--callback js-page-dialog js-page-dialog-callback">
+              <div class="page-header__dialog-wrap">
+                <button class="button-close page-header__dialog-close js-close-page-dialog" aria-label="Закрыть окно" type="button">
+                  <span class="button-close__icon">
+                  </span>
+                </button>
+                <div class="callback page-header__callback">
+                  <a class="callback__link" href="tel:+79785001445">+7 (978) <span class="callback__number">500-14-45</span>
+                  </a>
+                  <button class="callback__button js-callback-button" type="button">Обратный звонок
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="overlay page-header__overlay js-page-header-overlay">
+            </div>
+          </div>
+        </div>
+      </header>
+      <section class="intro">
+        <div class="intro__wrap">
+          <div class="intro__note intro__note--limit">
+            <div class="limit intro__limit">18+
+            </div>
+            <div class="intro__note-text">Вы находитесь на сайте табачной компании
+            </div>
+          </div>
+          <div class="intro__heading-wrap">
+            <h1 class="intro__heading"><span class="intro__heading-lg">Осуществляем полный <br>производственный цикл&nbsp;&mdash; </span><span class="intro__heading-sm">от&nbsp;выращивания сырья, производства продукции <br>до&nbsp;доставки потребителям </span><span class="intro__heading-md">более 20&nbsp;лет</span>
+              <svg class="intro__heading-icon">
+                <use xlink:href="./assets/images/sprites/sprite.svg#leafs"></use>
+              </svg>
+            </h1>
+          </div>
+          <div class="intro__video-wrap">
+            <!-- Для видео надо подставить id видео с ютуба data-video-id тогда из video.js подставится превьюшка и видео в модальное окно-->
+            <div class="video-item intro__video-item intro__video-item--left js-video-item" data-video-id="1ud5yDjM63I">
+              <div class="video-item__control">
+                <button class="button-video video-item__button js-button-video" type="button" hidden>
+                  <svg class="button-video__icon">
+                    <use xlink:href="./assets/images/sprites/sprite.svg#arrow-triangle"></use>
+                  </svg>
+                </button>
+                <div class="video-item__heading">Как происходит процесс выращивания
+                </div>
+              </div>
+            </div>
+            <div class="video-item intro__video-item intro__video-item--right js-video-item" data-video-id="yKrdrK6ZtUY">
+              <div class="video-item__control">
+                <button class="button-video video-item__button js-button-video" type="button" hidden>
+                  <svg class="button-video__icon">
+                    <use xlink:href="./assets/images/sprites/sprite.svg#arrow-triangle"></use>
+                  </svg>
+                </button>
+                <div class="video-item__heading">Как осуществляется призводство сигарет
+                </div>
+              </div>
+            </div>
+            <div class="intro__logo-wrap">
+              <a class="logo logo--primary intro__logo">
+                <img class="logo__image" src="./assets/images/logo-white.svg" alt=" ">
+              </a>
+            </div>
+          </div>
+          <div class="intro__note intro__note--button-down">
+            <button class="button-down intro__button-down js-button-down" type="button" hidden>
+              <svg class="button-down__icon">
+                <use xlink:href="./assets/images/sprites/sprite.svg#mouse"></use>
+              </svg>
+            </button>
+            <div class="intro__note-text">Минздрав предупреждает курение опасно для вашего здоровья
+            </div>
+          </div>
+        </div>
+        <div class="intro__bg" style="background-image: url(./assets/images/bg-intro.jpg);"></div>
+      </section>
+    </div>
+    <main class="content"></main>
+    <section class="main-slider content__main-slider js-down" style="background-image: url(./assets/images/bg-main-slider.jpg)">
+      <div class="main-slider__wrap">
+        <h1 class="main-slider__heading">Каталог продукции
+        </h1>
+        <div class="main-slider__slider">
+          <div class="swiper-container js-main-slider">
+            <div class="swiper-wrapper">
+              <div class="main-slider__item swiper-slide">
+                <article class="main-slider-item">
+                  <div class="main-slider-item__image-wrap">
+                    <svg class="main-slider-item__bg-image">
+                      <use xlink:href="./assets/images/sprites/sprite.svg#leafs"></use>
+                    </svg>
+                    <img class="main-slider-item__image" src="./assets/images/main-slider/main-slider-item01.jpg" alt=" ">
+                  </div>
+                  <div class="main-slider-item__text-wrap">
+                    <h3 class="main-slider-item__heading">EUROPE classical quality
+                    </h3>
+                    <div class="js-swiper-scroll swiper-container">
+                      <div class="swiper-wrapper">
+                        <div class="main-slider-item__text swiper-slide"><p>EUROPE classical quality — порадуют любителей насыщенного вкуса натурального табака. Новый дизайн упаковки лишь украсит и улучшит впечатление.</p>
+                        </div>
+                      </div>
+                      <div class="swiper-scrollbar"></div>
+                    </div>
+                    <div class="main-slider-item__link-wrap">
+                      <a class="link main-slider-item__link" href="javascript:void(0)">Подробнее
+                      </a>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <div class="main-slider__item swiper-slide">
+                <article class="main-slider-item">
+                  <div class="main-slider-item__image-wrap">
+                    <svg class="main-slider-item__bg-image">
+                      <use xlink:href="./assets/images/sprites/sprite.svg#leafs"></use>
+                    </svg>
+                    <img class="main-slider-item__image" src="./assets/images/main-slider/main-slider-item02.jpg" alt=" ">
+                  </div>
+                  <div class="main-slider-item__text-wrap">
+                    <h3 class="main-slider-item__heading">VXR Elegant silver
+                    </h3>
+                    <div class="js-swiper-scroll swiper-container">
+                      <div class="swiper-wrapper">
+                        <div class="main-slider-item__text swiper-slide"><p>EUROPE classical quality — порадуют любителей насыщенного вкуса натурального табака. Новый дизайн упаковки лишь украсит и улучшит впечатление.</p>
+                        </div>
+                      </div>
+                      <div class="swiper-scrollbar"></div>
+                    </div>
+                    <div class="main-slider-item__link-wrap">
+                      <a class="link main-slider-item__link" href="javascript:void(0)">Подробнее
+                      </a>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <div class="main-slider__item swiper-slide">
+                <article class="main-slider-item">
+                  <div class="main-slider-item__image-wrap">
+                    <svg class="main-slider-item__bg-image">
+                      <use xlink:href="./assets/images/sprites/sprite.svg#leafs"></use>
+                    </svg>
+                    <img class="main-slider-item__image" src="./assets/images/main-slider/main-slider-item03.jpg" alt=" ">
+                  </div>
+                  <div class="main-slider-item__text-wrap">
+                    <h3 class="main-slider-item__heading">FANTOM Classic Red
+                    </h3>
+                    <div class="js-swiper-scroll swiper-container">
+                      <div class="swiper-wrapper">
+                        <div class="main-slider-item__text swiper-slide"><p>EUROPE classical quality — порадуют любителей насыщенного вкуса натурального табака. Новый дизайн упаковки лишь украсит и улучшит впечатление.</p>
+                        </div>
+                      </div>
+                      <div class="swiper-scrollbar"></div>
+                    </div>
+                    <div class="main-slider-item__link-wrap">
+                      <a class="link main-slider-item__link" href="javascript:void(0)">Подробнее
+                      </a>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <div class="main-slider__item swiper-slide">
+                <article class="main-slider-item">
+                  <div class="main-slider-item__image-wrap">
+                    <svg class="main-slider-item__bg-image">
+                      <use xlink:href="./assets/images/sprites/sprite.svg#leafs"></use>
+                    </svg>
+                    <img class="main-slider-item__image" src="./assets/images/main-slider/main-slider-item04.jpg" alt=" ">
+                  </div>
+                  <div class="main-slider-item__text-wrap">
+                    <h3 class="main-slider-item__heading">DUNE Silver Label
+                    </h3>
+                    <div class="js-swiper-scroll swiper-container">
+                      <div class="swiper-wrapper">
+                        <div class="main-slider-item__text swiper-slide"><p>EUROPE classical quality — порадуют любителей насыщенного вкуса натурального табака. Новый дизайн упаковки лишь украсит и улучшит впечатление.</p>
+                        </div>
+                      </div>
+                      <div class="swiper-scrollbar"></div>
+                    </div>
+                    <div class="main-slider-item__link-wrap">
+                      <a class="link main-slider-item__link" href="javascript:void(0)">Подробнее
+                      </a>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="main-slider__nav">
+          <div class="swiper-container js-main-slider-nav">
+            <div class="swiper-wrapper">
+              <div class="main-slider__button-wrap swiper-slide">
+                <button class="main-slider-button" type="button">
+                  <img class="main-slider-button__image" src="./assets/images/main-slider/main-slider-button01.jpg" alt=" ">
+                  <span class="main-slider-button__title">EUROPE classical quality
+                  </span>
+                </button>
+              </div>
+              <div class="main-slider__button-wrap swiper-slide">
+                <button class="main-slider-button" type="button">
+                  <img class="main-slider-button__image" src="./assets/images/main-slider/main-slider-button02.jpg" alt=" ">
+                  <span class="main-slider-button__title">VXR Elegant silver
+                  </span>
+                </button>
+              </div>
+              <div class="main-slider__button-wrap swiper-slide">
+                <button class="main-slider-button" type="button">
+                  <img class="main-slider-button__image" src="./assets/images/main-slider/main-slider-button03.jpg" alt=" ">
+                  <span class="main-slider-button__title">FANTOM Classic Red
+                  </span>
+                </button>
+              </div>
+              <div class="main-slider__button-wrap swiper-slide">
+                <button class="main-slider-button" type="button">
+                  <img class="main-slider-button__image" src="./assets/images/main-slider/main-slider-button04.jpg" alt=" ">
+                  <span class="main-slider-button__title">DUNE Silver Label
+                  </span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <button class="control control--prev control--secondary js-main-slider-prev" type="button">
+            <svg class="control__icon">
+              <use xlink:href="./assets/images/sprites/sprite.svg#arrow"></use>
+            </svg>
+          </button>
+          <button class="control control--next control--secondary js-main-slider-next" type="button">
+            <svg class="control__icon">
+              <use xlink:href="./assets/images/sprites/sprite.svg#arrow"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="main-slider__pagination swiper-pagination js-main-slider-pagination"></div>
+      </div>
+    </section>
+    <div class="agency content__agency">
+      <div class="agency__wrap">
+        <h2 class="agency__heading">Представитель&shy;ства</h2>
+        <div class="agency__map">
+          <picture class="agency__picture">
+            <source media="(min-width: 768px)" srcset="./assets/images/map-outline-1166@1x.webp, ./assets/images/map-outline-1166@2x.webp 2x" type="image/webp">
+            <source media="(min-width: 768px)" srcset="./assets/images/map-outline-1166@1x.png, ./assets/images/map-outline-1166@2x.png 2x">
+            <source media="(min-width: 420px)" srcset="./assets/images/map-outline-768@1x.webp, ./assets/images/map-outline-768@2x.webp 2x" type="image/webp">
+            <source media="(min-width: 420px)" srcset="./assets/images/map-outline-768@1x.png, ./assets/images/map-outline-768@2x.png 2x">
+            <source srcset="./assets/images/map-outline-420@1x.webp, ./assets/images/map-outline-420@2x.webp 2x" type="image/webp"><img class="agency__image" src="./assets/images/map-outline-420@1x.png" srcset="./assets/images/map-outline-420@2x.png 2x" alt="Карта России">
+          </picture>
+          <ul class="agency__list">
+            <li class="agency__item agency__item--main">
+              <div class="pin-item pin-item--main">
+                <div class="pin-item__text">Головной офис
+                </div>
+                <div class="pin-item__descr">Республика Крым
+                </div>
+              </div>
+            </li>
+            <li class="agency__item agency__item--moscow">
+              <div class="pin-item">
+                <svg class="pin-item__icon">
+                  <use xlink:href="./assets/images/sprites/sprite.svg#pin"></use>
+                </svg>
+                <div class="pin-item__text">Москва
+                </div>
+              </div>
+            </li>
+            <li class="agency__item agency__item--peterburg">
+              <div class="pin-item">
+                <svg class="pin-item__icon">
+                  <use xlink:href="./assets/images/sprites/sprite.svg#pin"></use>
+                </svg>
+                <div class="pin-item__text">Санкт-Петербург
+                </div>
+              </div>
+            </li>
+            <li class="agency__item agency__item--barnaul">
+              <div class="pin-item">
+                <svg class="pin-item__icon">
+                  <use xlink:href="./assets/images/sprites/sprite.svg#pin"></use>
+                </svg>
+                <div class="pin-item__text">Барнаул
+                </div>
+              </div>
+            </li>
+            <li class="agency__item agency__item--irkutsk">
+              <div class="pin-item">
+                <svg class="pin-item__icon">
+                  <use xlink:href="./assets/images/sprites/sprite.svg#pin"></use>
+                </svg>
+                <div class="pin-item__text">Иркутск
+                </div>
+              </div>
+            </li>
+            <li class="agency__item agency__item--kazan">
+              <div class="pin-item">
+                <svg class="pin-item__icon">
+                  <use xlink:href="./assets/images/sprites/sprite.svg#pin"></use>
+                </svg>
+                <div class="pin-item__text">Казань
+                </div>
+              </div>
+            </li>
+            <li class="agency__item agency__item--krasnodar">
+              <div class="pin-item">
+                <svg class="pin-item__icon">
+                  <use xlink:href="./assets/images/sprites/sprite.svg#pin"></use>
+                </svg>
+                <div class="pin-item__text">Краснодар
+                </div>
+              </div>
+            </li>
+            <li class="agency__item agency__item--neftecamsk">
+              <div class="pin-item">
+                <svg class="pin-item__icon">
+                  <use xlink:href="./assets/images/sprites/sprite.svg#pin"></use>
+                </svg>
+                <div class="pin-item__text">Нефтекамск
+                </div>
+              </div>
+            </li>
+            <li class="agency__item agency__item--orel">
+              <div class="pin-item pin-item--text-before">
+                <svg class="pin-item__icon">
+                  <use xlink:href="./assets/images/sprites/sprite.svg#pin"></use>
+                </svg>
+                <div class="pin-item__text">Орёл
+                </div>
+              </div>
+            </li>
+            <li class="agency__item agency__item--rostov">
+              <div class="pin-item">
+                <svg class="pin-item__icon">
+                  <use xlink:href="./assets/images/sprites/sprite.svg#pin"></use>
+                </svg>
+                <div class="pin-item__text">Ростов-на-Дону
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <a class="button button--border-primary agency__button" href="javascript:void(0)">Все представительства
+        </a>
+      </div>
+    </div>
+    <section class="features content__features">
+      <div class="features__wrap">
+        <h2 class="hidden">Наши преимущества</h2>
+        <ul class="features__list">
+          <li class="features__item">
+            <div class="features-item">
+              <div class="features-item__top">
+                <div class="features-item__icon-wrap">
+                  <svg class="features-item__icon">
+                    <use xlink:href="./assets/images/sprites/sprite.svg#hands"></use>
+                  </svg>
+                </div>
+                <h4 class="features-item__heading">Лояльное сотрудничество
+                </h4>
+              </div>
+              <div class="features-item__text"><p>Возможность приобрести табачные изделия, как большой партией, так и&nbsp;сделать заказ на&nbsp;небольшую доставку от&nbsp;1-го блока</p>
+              </div>
+            </div>
+          </li>
+          <li class="features__item">
+            <div class="features-item">
+              <div class="features-item__top">
+                <div class="features-item__icon-wrap">
+                  <svg class="features-item__icon">
+                    <use xlink:href="./assets/images/sprites/sprite.svg#bag"></use>
+                  </svg>
+                </div>
+                <h4 class="features-item__heading">Ответственность и профессионализм
+                </h4>
+              </div>
+              <div class="features-item__text"><p>Штат более 500&nbsp;человек. Опытные специалисты гарантируют профессиональный подход к&nbsp;менеджменту и&nbsp;логистике. Заявки клиентов обрабатываются в&nbsp;самые сжатые сроки.</p>
+              </div>
+            </div>
+          </li>
+          <li class="features__item">
+            <div class="features-item">
+              <div class="features-item__top">
+                <div class="features-item__icon-wrap">
+                  <svg class="features-item__icon">
+                    <use xlink:href="./assets/images/sprites/sprite.svg#plant"></use>
+                  </svg>
+                </div>
+                <h4 class="features-item__heading">Гарантия качества
+                </h4>
+              </div>
+              <div class="features-item__text"><p>Обязательные этапы обработки: кондиционирование и&nbsp;соусирование, резка и&nbsp;сушка резаного продукта, отделение табачной жилки и&nbsp;пыли, ароматизация, хранение.</p>
+              </div>
+            </div>
+          </li>
+          <li class="features__item">
+            <div class="features-item">
+              <div class="features-item__top">
+                <div class="features-item__icon-wrap">
+                  <svg class="features-item__icon">
+                    <use xlink:href="./assets/images/sprites/sprite.svg#shedule"></use>
+                  </svg>
+                </div>
+                <h4 class="features-item__heading">Контроль полного производтвеного цикла
+                </h4>
+              </div>
+              <div class="features-item__text"><p>Выращивание сырья, организация производства и&nbsp;доставка потребителю</p>
+              </div>
+            </div>
+          </li>
+          <li class="features__item">
+            <div class="features-item">
+              <div class="features-item__top">
+                <div class="features-item__icon-wrap">
+                  <svg class="features-item__icon">
+                    <use xlink:href="./assets/images/sprites/sprite.svg#trophy"></use>
+                  </svg>
+                </div>
+                <h4 class="features-item__heading">Опыт Более 20 лет
+                </h4>
+              </div>
+              <div class="features-item__text"><p>Предлагаемые компанией бренды представлены на&nbsp;рынке Украины и&nbsp;России</p>
+              </div>
+            </div>
+          </li>
+          <li class="features__item">
+            <div class="features-item">
+              <div class="features-item__top">
+                <div class="features-item__icon-wrap">
+                  <svg class="features-item__icon">
+                    <use xlink:href="./assets/images/sprites/sprite.svg#pack"></use>
+                  </svg>
+                </div>
+                <h4 class="features-item__heading">Узкая специализация
+                </h4>
+              </div>
+              <div class="features-item__text"><p>Ассортиментный портфель 12&nbsp;наименований табачных изделий</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <div class="news">
+      <div class="news__wrap">
+        <div class="news__top">
+          <h2 class="news__heading">Новости</h2>
+          <a class="link link--uppercase news__top-link" href="javascript:void(0)">Все новости
+          </a>
+        </div>
+        <ul class="news__list">
+          <li class="news__item">
+            <article class="news-item">
+              <a class="news-item__image-wrap" href="news-item.html">
+                <img class="news-item__image" src="./assets/upload/news01.jpg" alt=" ">
+              </a>
+              <div class="news-item__content">
+                <h4 class="news-item__heading">
+                  <a class="news-item__heading-link" href="javascript:void(0)">Вальцованная жилк rty retyrety rtyryrtyrtа
+                  </a>
+                </h4>
+                <p class="news-item__text js-ellipsis">В  табачной промышленности предварительная обработка табачного сырья заключается в отделении листовой
+                </p>
+                <div class="news-item__bottom">
+                  <div class="date news-item__date">17 апреля 2019
+                  </div>
+                  <a class="link" href="javascript:void(0)">подробнее
+                  </a>
+                </div>
+              </div>
+            </article>
+          </li>
+          <li class="news__item">
+            <article class="news-item">
+              <a class="news-item__image-wrap" href="news-item.html">
+                <img class="news-item__image" src="./assets/upload/news02.jpg" alt=" ">
+              </a>
+              <div class="news-item__content">
+                <h4 class="news-item__heading">
+                  <a class="news-item__heading-link" href="javascript:void(0)">Взорванная жилка
+                  </a>
+                </h4>
+                <p class="news-item__text js-ellipsis">До 1993 года в России не было ограничений на содержание смол и никотина в табачных изделиях. В целях борьбы
+                </p>
+                <div class="news-item__bottom">
+                  <div class="date news-item__date">17 апреля 2019
+                  </div>
+                  <a class="link" href="javascript:void(0)">подробнее
+                  </a>
+                </div>
+              </div>
+            </article>
+          </li>
+          <li class="news__item">
+            <article class="news-item">
+              <a class="news-item__image-wrap" href="news-item.html">
+                <img class="news-item__image" src="./assets/upload/news02.jpg" alt=" ">
+              </a>
+              <div class="news-item__content">
+                <h4 class="news-item__heading">
+                  <a class="news-item__heading-link" href="javascript:void(0)">Табачное сырье
+                  </a>
+                </h4>
+                <p class="news-item__text js-ellipsis">Табачное сырье: табачные листья, прошедшие послеуборочную обработку и предназначенные для производства табачных
+                </p>
+                <div class="news-item__bottom">
+                  <div class="date news-item__date">17 апреля 2019
+                  </div>
+                  <a class="link" href="javascript:void(0)">подробнее
+                  </a>
+                </div>
+              </div>
+            </article>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="footer__top">
+        <div class="footer__wrap">
+          <div class="footer__about">
+            <div class="footer__about-company">
+              <div class="footer__logo-wrap">
+                <a class="logo logo--secondary footer__logo">
+                  <img class="logo__image" src="./assets/images/logo-white.svg" alt=" ">
+                </a>
+              </div>
+              <p class="footer__text footer__text--info">Крупнейший отечественный <br>производитель и поставщик <br>табачных изделий
+              </p>
+            </div>
+            <div class="footer__about-contacts">
+              <div class="footer__phone-wrap">
+                <a class="footer__phone" href="tel:+79785001445">+7 (978) 500-14-45
+                </a>
+              </div>
+              <p class="footer__text footer__text--address">Респ. Крым, г. Симферополь, <br>ул. Набережная им. 60-летия <br>СССР, д.34
+              </p>
+            </div>
+          </div>
+          <div class="footer__nav">
+            <div class="footer__nav-item footer__nav-item--dropdown footer__nav-item--company js-footer-nav-dropdown" role="navigation" aria-label="Дополнительное меню" itemscope itemtype="http://schema.org/SiteNavigationElement">
+              <h4 class="footer__title js-footer-nav-dropdown-button">Компания</h4>
+              <ul class="footer__list">
+                <li class="footer__item" itemprop="name">
+                  <a href="javascript:void(0)" itemprop="url">Компания
+                  </a>
+                </li>
+                <li class="footer__item" itemprop="name">
+                  <a href="javascript:void(0)" itemprop="url">Производство
+                  </a>
+                </li>
+                <li class="footer__item" itemprop="name">
+                  <a href="javascript:void(0)" itemprop="url">FAQ
+                  </a>
+                </li>
+                <li class="footer__item" itemprop="name">
+                  <a href="javascript:void(0)" itemprop="url">Сертификаты
+                  </a>
+                </li>
+                <li class="footer__item" itemprop="name">
+                  <a href="javascript:void(0)" itemprop="url">Статьи
+                  </a>
+                </li>
+                <li class="footer__item" itemprop="name">
+                  <a href="javascript:void(0)" itemprop="url">Контакты
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__nav-item footer__nav-item--dropdown footer__nav-item--production js-footer-nav-dropdown" role="navigation" aria-label="Дополнительное меню" itemscope itemtype="http://schema.org/SiteNavigationElement">
+              <h4 class="footer__title js-footer-nav-dropdown-button">Продукция</h4>
+              <div class="footer__nav-row">
+                <ul class="footer__list">
+                  <li class="footer__item" itemprop="name">
+                    <a href="javascript:void(0)" itemprop="url">DUNE Silver Label
+                    </a>
+                  </li>
+                  <li class="footer__item" itemprop="name">
+                    <a href="javascript:void(0)" itemprop="url">DUNE Red Label
+                    </a>
+                  </li>
+                  <li class="footer__item" itemprop="name">
+                    <a href="javascript:void(0)" itemprop="url">DUNE Blue Label
+                    </a>
+                  </li>
+                  <li class="footer__item" itemprop="name">
+                    <a href="javascript:void(0)" itemprop="url">EUROPE classical quality
+                    </a>
+                  </li>
+                  <li class="footer__item" itemprop="name">
+                    <a href="javascript:void(0)" itemprop="url">FANTOM Classic Blue
+                    </a>
+                  </li>
+                  <li class="footer__item" itemprop="name">
+                    <a href="javascript:void(0)" itemprop="url">FANTOM Classic Red
+                    </a>
+                  </li>
+                </ul>
+                <ul class="footer__list">
+                  <li class="footer__item" itemprop="name">
+                    <a href="javascript:void(0)" itemprop="url">VXR Elegant Red
+                    </a>
+                  </li>
+                  <li class="footer__item" itemprop="name">
+                    <a href="javascript:void(0)" itemprop="url">VXR Elegant Silver
+                    </a>
+                  </li>
+                  <li class="footer__item" itemprop="name">
+                    <a href="javascript:void(0)" itemprop="url">Біле Сонце класичні
+                    </a>
+                  </li>
+                  <li class="footer__item" itemprop="name">
+                    <a href="javascript:void(0)" itemprop="url">Біле Сонце оригінальні
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="footer__wrap">
+          <p class="footer__copyright">г. Симферополь &copy;&nbsp;Copyright 2019&nbsp;г.
+          </p>
+          <p class="footer__notify">Минздрав предупреждает курение опасно для вашего здоровья
+          </p>
+          <div class="footer__madein">Сделанo в
+            <a title="Sheer" href="https://sheer82.ru/"><span class="hidden">'Sheer'</span>
+              <svg>
+                <use xlink:href="./assets/images/sprites/sprite.svg#sheer"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="footer__conf">
+            <a class="footer__conf-link" href="javascript:void(0)">Политика конфиденциальности
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <button class="button-up js-page-up" type="button">Наверх
+    </button>
+    <div class="modal js-callback-modal js-modal">
+      <div class="overlay modal__overlay active js-modal-overlay">
+      </div>
+      <div class="modal__dialog">
+        <button class="button-close modal__close js-modal-close" aria-label="Закрыть окно" type="button">
+          <span class="button-close__icon">
+          </span>
+        </button>
+        <div class="modal__dialog-inner">
+          <h3 class="modal__heading">Заказать звонок
+          </h3>
+          <p class="modal__text">Заполните форму и наш специалист перезвонит Вам в ближайшее время
+          </p>
+          <form action="/" method="post" accept-charset="UTF-8">
+            <div class="modal__field-group">
+              <label class="field field--w-icon field--border-bottom modal__field">
+                <span class="hidden">Ваше имя
+                </span>
+                <input class="field__input" tabindex="0" placeholder="Ваше имя" name="user" required type="text" aria-required="true" aria-invalid="false">
+                <svg class="field__icon">
+                  <use xlink:href="./assets/images/sprites/sprite.svg#user"></use>
+                </svg>
+              </label>
+              <label class="field field--w-icon field--border-bottom modal__field">
+                <span class="hidden">Ваш телефон
+                </span>
+                <input class="field__input" tabindex="0" placeholder="+7 (___) ___-__-__" name="tel" required type="tel" aria-required="true" aria-invalid="false">
+                <svg class="field__icon">
+                  <use xlink:href="./assets/images/sprites/sprite.svg#tel"></use>
+                </svg>
+              </label>
+            </div>
+            <div class="modal__submit-wrap">
+              <label class="button button--shadow button--size-md modal__submit">
+                <input class="hidden" type="submit">
+                Отправить
+              </label>
+            </div>
+            <div class="modal__confirm-wrap">
+              <label class="checkbox checkbox--confirm form-feedback__confirm">
+                <input class="hidden checkbox__input" required checked type="checkbox">
+                <span class="checkbox__label">Даю согласие на обработку моих персональных данных
+                </span>
+              </label>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="modal js-callback-modal js-modal">
+      <div class="overlay modal__overlay active js-modal-overlay">
+      </div>
+      <div class="modal__dialog">
+        <button class="button-close modal__close js-modal-close" aria-label="Закрыть окно" type="button">
+          <span class="button-close__icon">
+          </span>
+        </button>
+        <div class="modal__dialog-inner">
+          <h3 class="modal__heading">Ваш заказ: EUROPE classical quality
+          </h3>
+          <form action="/" method="post" accept-charset="UTF-8">
+            <div class="modal__field-group">
+              <label class="field field--w-icon field--border-bottom modal__field">
+                <span class="hidden">Ваше имя
+                </span>
+                <input class="field__input" tabindex="0" placeholder="Ваше имя" name="user" required type="text" aria-required="true" aria-invalid="false">
+                <svg class="field__icon">
+                  <use xlink:href="./assets/images/sprites/sprite.svg#user"></use>
+                </svg>
+              </label>
+              <label class="field field--w-icon field--border-bottom modal__field">
+                <span class="hidden">Ваш телефон
+                </span>
+                <input class="field__input" tabindex="0" placeholder="+7 (___) ___-__-__" name="tel" required type="tel" aria-required="true" aria-invalid="false">
+                <svg class="field__icon">
+                  <use xlink:href="./assets/images/sprites/sprite.svg#tel"></use>
+                </svg>
+              </label>
+            </div>
+            <div class="modal__submit-wrap">
+              <label class="button button--shadow button--size-md modal__submit">
+                <input class="hidden" type="submit">
+                Заказать
+              </label>
+            </div>
+            <div class="modal__confirm-wrap">
+              <label class="checkbox checkbox--confirm form-feedback__confirm">
+                <input class="hidden checkbox__input" required checked type="checkbox">
+                <span class="checkbox__label">Даю согласие на обработку моих персональных данных
+                </span>
+              </label>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="modal modal--video js-modal-video js-modal">
+      <div class="overlay modal__overlay active js-modal-overlay">
+      </div>
+      <div class="modal__dialog">
+        <button class="button-close modal__close js-modal-close" aria-label="Закрыть окно" type="button">
+          <span class="button-close__icon">
+          </span>
+        </button>
+        <div class="modal__dialog-inner">
+          <iframe class="modal__video js-modal-video-iframe" id="player" width="640" height="360"></iframe>
+        </div>
+      </div>
+    </div>
+    <script src="./scripts/libs/jquery.js"></script>
+    <script src="./scripts/libs/imask.js"></script>
+    <script src="./scripts/libs/svg4everybody.js"></script>
+    <script src="./scripts/libs/ofi.js"></script>
+    <script src="./scripts/libs/jquery.fancybox.js"></script>
+    <script src="./scripts/libs/picturefill.js"></script>
+    <script src="./scripts/libs/jquery.nanoscroller.js"></script>
+    <script src="./scripts/libs/swiper.js"></script>
+    <script src="./scripts/scripts.js"></script>
+  </body>
+</html>

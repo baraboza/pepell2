@@ -1,0 +1,159 @@
+.production {
+  &--intro {
+    margin-bottom: 30px;
+  }
+}
+
+.production__wrap {
+  @include wrapper;
+}
+
+.production__column {
+  &--text {
+    @include first-last;
+  }
+}
+
+.production__heading {
+  margin: 0;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 1.3;
+  text-align: center;
+}
+
+.production__text {
+  color: color(primary);
+  font-size: 18px;
+}
+
+.production__list {
+  margin-bottom: 20px;
+}
+
+.production__item {
+  font-size: 16px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.production__image-wrap {
+  display: none;
+}
+
+@include respond-to(small-lg) {
+  .production__heading {
+    text-align: left;
+  }
+}
+
+@include respond-to(medium) {
+  .production__heading {
+    margin-bottom: 30px;
+    font-size: 26px;
+  }
+
+  .production__text {
+    font-size: 21px;
+  }
+
+  .production__item {
+    font-size: 18px;
+  }
+}
+
+@include respond-to(medium-lg) {
+  .production {
+    &--intro {
+      margin-bottom: 0;
+
+      .production__image-wrap,
+      .production__image {
+        height: 100%;
+      }
+    }
+  }
+
+  .production__row {
+    display: flex;
+  }
+
+  .production__column {
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &--text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: calc(57% - 40px);
+      margin-right: 40px;
+      margin-bottom: 0;
+    }
+
+    &--image {
+      position: relative;
+      width: 43%;
+    }
+  }
+
+  .production__image-wrap {
+    display: block;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .production__image {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+    @include ofi(cover, center);
+  }
+}
+
+@include respond-to(large) {
+  .production {
+    &--intro {
+      .production__list {
+        padding-right: 120px;
+      }
+
+      .production__image-wrap,
+      .production__image {
+        height: auto;
+      }
+    }
+  }
+
+  .production__heading {
+    margin-bottom: 60px;
+    font-size: 30px;
+  }
+
+  .production__column {
+    &--text {
+      width: calc(57% - 70px);
+      margin-right: 70px;
+    }
+  }
+
+  .production__text {
+    margin-bottom: 30px;
+    font-size: 24px;
+  }
+
+  .production__list {
+    margin-bottom: 30px;
+  }
+
+  .production__item {
+    margin-bottom: 30px;
+    font-size: 20px;
+  }
+}

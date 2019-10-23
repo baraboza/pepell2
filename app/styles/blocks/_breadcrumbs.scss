@@ -1,0 +1,38 @@
+.breadcrumbs__list {
+  @include ol-no;
+  font-size: 0;
+}
+
+.breadcrumbs__item {
+  display: inline-block;
+  margin: 0;
+  margin-bottom: 0;
+  margin-right: 6px;
+  font-size: 13px;
+
+  &:last-child {
+    margin-right: 0;
+
+    .breadcrumbs__link {
+      pointer-events: none;
+      opacity: 0.6;
+
+      &::after {
+        display: none;
+      }
+    }
+  }
+}
+
+.breadcrumbs__link {
+  display: inline;
+  text-decoration: none;
+
+  &::after {
+    content: " \2022";
+  }
+
+  @include hover {
+    text-decoration: underline;
+  }
+}

@@ -1,0 +1,59 @@
+$button: (
+  medium: (
+    small: (
+      height: 54px,
+      font-size: 14px,
+      pads-x: 30px,
+    ),
+  ),
+);
+
+.button {
+  display: inline-block;
+  font-weight: 700;
+  text-decoration: none;
+  min-width: 220px;
+  cursor: pointer;
+  text-align: center;
+  text-transform: uppercase;
+
+  &--size-md {
+    min-height: get($button, medium, small, height);
+    padding: (get($button, medium, small, height) - (get($button, medium, small, font-size) + 4px))/2 get($button, medium, small, pads-x);
+    border-radius: get($button, medium, small, height)/2 + 1px;
+    font-size: get($button, medium, small, font-size);
+    line-height: get($button, medium, small, font-size) + 4px;
+  }
+
+  &:disabled,
+  &--bg-disabled {
+    pointer-events: none;
+    cursor: default;
+    background-color: color(disabled);
+    color: color(white);
+  }
+
+  &--shadow {
+    background-image: linear-gradient(#ae7528, #8a4609);
+    background-color: color(secondary);
+    color: color(white);
+    box-shadow: 0 4px 0 0 #ad7427;
+    transform-origin: center;
+
+    @include hover {
+      transform: translateY(2px);
+      box-shadow: 0 2px 0 0 #ad7427;
+    }
+  }
+}
+
+@include respond-to(medium) {
+  .button {
+
+  }
+}
+
+@include respond-to(large) {
+  .button {
+  }
+}

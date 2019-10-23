@@ -1,0 +1,27 @@
+.teaser {
+  color: color(primary);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.56;
+  text-align: center;
+}
+
+@include respond-to(small-lg) {
+  .teaser {
+    text-align: left;
+  }
+}
+
+@include respond-to(medium) {
+  .teaser {
+    width: 50%;
+    font-size: 17px;
+  }
+}
+
+@include respond-to(large) {
+  .teaser {
+    width: 50%;
+    font-size: 18px;
+  }
+}

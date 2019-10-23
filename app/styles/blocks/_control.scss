@@ -1,0 +1,91 @@
+.control {
+  display: inline-block;
+  color: inherit;
+  width: 40px;
+  height: 40px;
+  padding: 4px;
+  text-decoration: none;
+
+  &--prev {
+    .control__icon {
+      transform: rotate(180deg);
+    }
+  }
+
+  &--next {
+  }
+
+  &--secondary {
+    .control__icon {
+      fill: color(secondary);
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+      .control__icon {
+        fill: color(white);
+      }
+    }
+  }
+
+  &--circle {
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: color(white);
+    box-shadow: 0 5px 13px 0 rgba(color(secondary), 0.2);
+
+    .control__icon {
+      fill: color(secondary);
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+      box-shadow: 0 0 6px 0 rgba(color(secondary), 0.2);
+
+      .control__icon {
+        fill: rgba(color(secondary), 0.5);
+      }
+    }
+
+    &.disabled,
+    &:disabled {
+      pointer-events: none;
+      box-shadow: 0 0 6px 0 rgba(color(secondary), 0.2);
+
+      .control__icon {
+        fill: color(disabled);
+      }
+    }
+  }
+}
+
+.control__icon {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+@include respond-to(medium) {
+  .control {
+    width: 42px;
+    height: 42px;
+
+    &--circle {
+      width: 55px;
+      height: 55px;
+    }
+  }
+}
+
+@include respond-to(medium) {
+  .control {
+    &--circle {
+      width: 60px;
+      height: 60px;
+    }
+  }
+}

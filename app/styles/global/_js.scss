@@ -1,0 +1,27 @@
+.js-content-tabs {
+  display: none;
+
+  &.active {
+    display: block;
+  }
+}
+
+.js-show-items {
+   > * {
+    display: none;
+  }
+
+  &.active {
+     > * {
+      display: block !important;
+    }
+  }
+}
+
+.js-hidden {
+  display: none;
+}
+
+@include respond-to(medium-lg) {
+
+}
